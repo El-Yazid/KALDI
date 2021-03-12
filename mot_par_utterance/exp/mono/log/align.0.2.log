@@ -1,0 +1,1160 @@
+# align-equal-compiled "ark:gunzip -c exp/mono/fsts.2.gz|" "ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split2/2/utt2spk scp:data/train/split2/2/cmvn.scp scp:data/train/split2/2/feats.scp ark:- | add-deltas  ark:- ark:- |" ark,t:- | gmm-acc-stats-ali --binary=true exp/mono/0.mdl "ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split2/2/utt2spk scp:data/train/split2/2/cmvn.scp scp:data/train/split2/2/feats.scp ark:- | add-deltas  ark:- ark:- |" ark:- exp/mono/0.2.acc 
+# Started at Fri Mar 12 17:34:06 CET 2021
+#
+gmm-acc-stats-ali --binary=true exp/mono/0.mdl 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split2/2/utt2spk scp:data/train/split2/2/cmvn.scp scp:data/train/split2/2/feats.scp ark:- | add-deltas  ark:- ark:- |' ark:- exp/mono/0.2.acc 
+align-equal-compiled 'ark:gunzip -c exp/mono/fsts.2.gz|' 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split2/2/utt2spk scp:data/train/split2/2/cmvn.scp scp:data/train/split2/2/feats.scp ark:- | add-deltas  ark:- ark:- |' ark,t:- 
+add-deltas ark:- ark:- 
+apply-cmvn --utt2spk=ark:data/train/split2/2/utt2spk scp:data/train/split2/2/cmvn.scp scp:data/train/split2/2/feats.scp ark:- 
+apply-cmvn --utt2spk=ark:data/train/split2/2/utt2spk scp:data/train/split2/2/cmvn.scp scp:data/train/split2/2/feats.scp ark:- 
+add-deltas ark:- ark:- 
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 10,14,25,15,13,12,9,10,11,15
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 8 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1029_1024
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 14,9,11,16,16,21,22,9,15,20
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 6 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1029_1041
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 12,21,28,11,16,10,13,17,22,17
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 9 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1029_1078
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 9,14,9,13,17,19,14,9,14,14
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 8 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1029_1094
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 13,13,16,13,14,15,15,14,22,19
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 6 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1029_1104
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 17,10,13,18,18,18,19,12,13,15
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 9 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1029_1119
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 17,17,9,10,14,11,19,6,6,12
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 5 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1029_1124
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 14,13,11,8,9,16,6,22,6,14
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 1 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1029_1143
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 6,14,8,10,7,15,30,20,14,24
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 1 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1029_1147
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 10,16,19,9,12,16,30,15,13,10
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 8 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1029_1152
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 10,9,17,16,13,21,18,15,12,9
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 8 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1029_1290
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 22,18,26,16,15,12,15,12,9,13
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 8 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1029_140
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 10,17,13,9,16,13,14,28,16,12
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 7 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1029_142
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 12,12,16,12,14,12,19,12,17,13
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 7 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1029_159
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 16,13,12,21,14,14,12,21,19,13
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 11 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1029_185
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 24,9,15,14,10,22,9,17,10,11
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 8 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1029_190
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 14,18,13,9,14,18,14,12,16,17
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 8 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1029_262
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 24,14,20,9,13,9,12,13,11,9
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 8 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1029_292
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 10,14,13,10,14,17,17,9,14,10
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 8 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1029_302
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 9,11,12,11,6,10,13,14,3,17
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 1 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1029_316
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 13,9,12,18,20,19,30,19,25,17
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 5 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1029_443
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 12,13,13,16,19,12,13,21,23,12
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 5 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1029_451
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 18,14,17,17,9,16,18,12,21,10
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 7 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1029_454
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 17,11,10,19,10,16,12,15,10,19
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 8 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1029_459
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 20,15,12,9,13,18,15,24,12,18
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 5 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1029_505
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 10,11,3,18,20,14,23,9,10,17
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 1 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1029_522
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 14,16,18,13,14,9,13,10,17,14
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 4 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1029_543
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 24,18,28,26,33,27,25,27,33,34
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 14 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1029_546
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 17,13,21,10,14,17,10,12,10,13
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 7 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1029_578
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 7,13,7,4,15,9,31,3,6,10
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 1 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1029_584
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 21,7,10,16,13,10,18,14,12,13
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 6 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1029_593
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 12,10,19,13,22,10,17,17,20,8
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 1 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1029_616
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 7,5,6,8,17,21,14,7,19,10
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 1 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1029_626
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 16,22,12,25,15,22,13,12,12,17
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 7 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1029_645
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 19,10,6,18,10,9,9,16,16,13
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 1 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1029_674
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 6,13,12,7,26,4,9,14,12,10
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 1 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1029_678
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 20,19,21,13,9,22,14,14,12,15
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 7 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1029_69
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 13,19,7,9,23,18,6,14,11,8
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 4 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1029_745
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 15,13,9,12,6,8,15,16,15,12
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 2 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1029_752
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 9,14,19,25,9,17,12,9,11,21
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 7 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1029_765
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 20,15,24,22,15,19,20,29,18,17
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 11 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1029_772
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 13,21,22,19,15,17,22,17,19,14
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 10 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1029_799
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 10,10,13,13,14,13,13,15,13,21
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 9 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1029_821
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 9,6,13,11,6,11,6,10,12,19
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 2 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1029_870
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 12,15,14,9,13,18,14,20,10,20
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 5 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1029_910
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 14,9,18,21,15,14,12,17,10,16
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 7 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1029_933
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 9,6,12,13,7,3,9,11,13,6
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 1 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1029_953
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 14,19,12,28,21,22,12,19,17,12
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 9 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1029_970
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 18,15,14,13,13,14,14,10,9,14
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 5 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1032_100
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 13,12,16,14,10,9,8,9,6,11
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 5 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1032_1026
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 15,16,15,12,16,10,16,9,11,9
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 7 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1032_1027
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 13,7,10,3,13,6,6,3,11,8
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 2 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1032_1030
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 11,9,9,15,9,20,12,12,9,12
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 8 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1032_1052
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 9,18,16,9,20,12,14,19,9,18
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 8 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1032_1060
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 17,9,16,12,14,15,19,12,14,11
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 8 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1032_1069
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 19,8,3,3,13,3,7,3,12,11
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 2 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1032_1102
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 12,16,9,15,15,16,10,16,21,10
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 6 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1032_1128
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 9,17,16,10,14,19,19,19,12,9
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 7 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1032_1133
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 11,12,13,20,18,12,17,15,15,19
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 8 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1032_1134
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 24,24,18,23,18,32,22,23,29,20
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 16 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1032_1151
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 6,21,10,14,10,14,10,16,12,13
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 4 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1032_1158
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 12,18,18,7,8,7,15,11,12,7
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 1 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1032_1163
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 9,15,9,16,14,18,10,9,11,14
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 8 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1032_1166
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 13,12,18,12,14,14,15,11,12,19
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 9 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1032_1220
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 16,9,10,12,15,14,12,15,11,17
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 8 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1032_123
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 18,21,16,12,12,21,17,19,12,12
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 8 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1032_172
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 15,12,12,17,20,13,12,13,13,13
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 7 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1032_173
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 19,13,13,12,18,12,17,15,16,13
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 7 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1032_183
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 12,12,17,20,13,15,23,17,11,15
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 8 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1032_195
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 19,13,36,15,19,12,15,13,14,9
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 8 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1032_212
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 16,12,19,14,12,14,16,16,16,23
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 11 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1032_232
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 10,9,22,14,16,16,18,14,9,9
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 8 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1032_247
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 14,15,13,17,20,11,13,15,12,12
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 10 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1032_248
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 23,11,16,18,10,13,12,14,22,14
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 8 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1032_250
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 16,12,19,16,15,15,14,13,11,13
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 10 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1032_270
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 9,17,22,17,20,16,9,18,21,14
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 7 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1032_275
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 15,18,13,17,16,19,32,28,18,16
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 12 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1032_28
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 14,14,19,14,19,17,13,17,27,12
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 9 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1032_292
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 19,18,15,22,18,19,15,19,22,15
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 8 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1032_302
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 16,15,9,14,12,15,6,10,10,17
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 4 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1032_324
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 13,18,11,16,17,13,9,11,13,13
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 8 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1032_350
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 13,18,10,13,10,10,11,9,15,16
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 4 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1032_359
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 12,12,14,14,17,12,13,20,12,16
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 6 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1032_363
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 20,21,9,17,20,15,15,12,16,24
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 4 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1032_364
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 16,21,21,16,20,15,16,13,15,13
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 8 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1032_374
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 14,15,17,12,20,13,10,6,13,21
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 5 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1032_392
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 12,15,9,14,19,9,16,17,16,9
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 7 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1032_412
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 20,20,18,26,22,15,21,27,18,18
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 14 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1032_445
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 9,11,23,19,11,17,20,15,12,13
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 8 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1032_455
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 21,32,21,35,22,29,22,22,22,23
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 17 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1032_459
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 13,16,13,15,10,25,15,17,15,10
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 8 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1032_462
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 13,14,10,15,6,7,19,12,16,9
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 4 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1032_466
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 10,21,9,16,10,10,29,12,25,12
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 8 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1032_469
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 14,14,21,12,17,19,14,13,13,15
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 9 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1032_480
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 15,17,12,11,18,17,21,12,17,20
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 8 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1032_486
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 14,17,20,9,15,12,15,10,17,11
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 6 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1032_495
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 12,11,19,20,13,9,9,20,11,19
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 8 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1032_50
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 12,13,15,19,14,21,10,13,16,13
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 7 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1032_508
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 12,10,22,11,9,11,16,15,10,10
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 8 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1032_509
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 13,25,11,15,15,19,14,16,12,17
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 10 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1032_517
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 15,16,12,15,12,14,15,17,14,13
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 10 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1032_524
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 11,6,6,11,8,6,16,10,17,7
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 4 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1032_534
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 19,12,10,11,14,12,15,12,9,13
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 4 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1032_535
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 15,21,12,10,10,12,13,14,15,12
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 8 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1032_556
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 10,8,10,14,9,25,9,10,17,12
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 5 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1032_573
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 17,17,27,12,14,17,16,14,13,12
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 10 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1032_581
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 12,21,15,15,18,17,21,20,17,15
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 10 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1032_583
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 20,26,20,26,19,26,25,21,25,19
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 18 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1032_588
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 9,18,16,13,9,18,9,10,19,13
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 6 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1032_596
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 13,14,14,10,17,12,12,17,15,15
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 6 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1032_627
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 13,17,14,10,16,10,14,12,9,9
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 8 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1032_628
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 16,14,14,15,16,9,19,17,9,16
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 4 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1032_639
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 14,22,12,15,17,20,22,12,13,10
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 6 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1032_660
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 15,14,16,14,12,13,23,16,14,15
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 6 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1032_674
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 12,14,9,13,13,20,16,12,9,16
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 7 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1032_686
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 11,12,13,14,13,12,16,9,11,25
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 8 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1032_720
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 29,21,21,34,24,22,27,26,21,25
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 19 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1032_744
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 9,10,13,13,10,15,17,18,13,10
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 8 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1032_748
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 9,12,14,10,9,12,11,13,15,13
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 7 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1032_751
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 18,14,16,14,12,19,15,18,12,9
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 8 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1032_753
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 13,11,15,10,13,16,11,14,14,12
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 9 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1032_791
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 13,12,13,17,9,12,19,16,9,16
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 7 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1032_809
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 12,15,11,15,11,14,10,17,16,18
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 7 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1032_817
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 11,10,11,6,6,9,7,16,6,8
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 5 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1032_82
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 10,19,16,12,14,13,19,16,14,12
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 8 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1032_832
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 12,16,22,14,15,17,15,15,19,14
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 6 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1032_842
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 16,14,12,12,9,12,25,22,12,14
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 4 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1032_851
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 9,17,18,18,15,21,13,18,14,13
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 8 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1032_853
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 14,21,10,13,6,10,11,13,12,11
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 5 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1032_863
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 17,12,9,9,12,14,14,9,17,9
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 7 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1032_865
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 22,22,23,21,22,22,20,26,21,23
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 19 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1032_890
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 19,13,9,17,14,16,19,17,15,13
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 7 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1032_892
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 12,11,16,10,13,15,14,10,14,11
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 9 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1032_916
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 9,11,10,14,20,14,10,20,9,9
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 4 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1032_919
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 9,16,11,9,15,15,18,20,10,17
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 6 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1032_942
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 21,14,10,26,10,9,10,14,12,9
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 7 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1032_954
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 16,9,12,14,15,16,14,13,13,17
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 7 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1032_968
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 28,27,27,21,18,21,24,21,27,34
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 17 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1032_97
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 17,7,11,7,12,11,10,6,7,14
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 5 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1032_99
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 9,9,9,13,9,17,16,9,7,20
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 2 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1032_993
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 41,12,15,13,16,7,14,13,10,7
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 6 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1032_994
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 12,10,10,12,10,19,13,12,22,19
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 4 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_1068
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 12,14,17,15,13,22,17,16,14,13
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 9 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_1077
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 9,6,17,19,21,13,16,9,19,6
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 4 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_1121
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 13,19,14,21,29,13,10,9,15,12
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 7 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_1189
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 9,11,22,9,13,11,24,11,15,9
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 5 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_1198
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 12,10,10,15,9,9,12,9,13,18
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 2 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_1199
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 17,12,10,17,30,17,17,19,16,17
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 9 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_1201
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 11,10,11,16,9,13,6,13,18,12
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 5 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_1215
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 20,12,24,22,14,12,15,27,14,12
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 6 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_1229
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 10,19,13,20,14,16,12,17,14,14
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 8 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_123
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 6,14,12,12,14,12,9,16,12,9
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 5 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_1233
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 16,19,24,12,14,18,10,15,9,12
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 6 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_1234
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 19,10,18,12,11,13,14,9,15,13
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 8 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_1247
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 13,22,9,15,12,11,17,10,10,9
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 7 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_1271
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 9,13,25,9,14,13,15,18,15,13
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 8 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_1280
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 16,12,12,10,7,16,14,11,8,11
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 6 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_1299
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 16,15,19,19,20,18,20,16,20,19
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 13 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_1313
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 24,10,9,14,21,9,15,17,16,10
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 8 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_1333
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 11,19,11,6,13,17,20,17,18,14
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 5 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_134
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 10,23,14,20,16,12,11,9,17,9
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 8 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_1347
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 20,30,29,26,23,22,18,21,27,19
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 15 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_1426
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 20,22,20,22,17,24,20,18,26,18
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 15 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_1460
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 12,10,18,12,17,12,16,13,15,14
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 8 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_1483
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 18,11,12,16,13,25,17,13,13,12
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 6 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_1551
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 14,11,16,21,26,17,10,19,16,17
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 6 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_1552
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 6,12,6,10,6,16,11,10,10,12
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 4 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_1624
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 10,12,17,14,12,12,11,13,12,13
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 7 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_1672
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 10,13,12,15,12,14,15,14,11,13
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 5 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_1737
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 6,9,14,15,14,18,13,9,10,18
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 4 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_1738
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 13,13,14,16,9,18,9,24,19,9
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 8 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_1744
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 13,9,6,12,14,9,15,11,23,10
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 4 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_1759
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 9,22,22,19,15,17,17,15,16,9
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 7 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_176
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 15,15,12,6,6,6,14,13,10,19
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 4 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_1769
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 17,7,12,13,17,15,12,6,6,26
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 4 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_1774
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 12,13,13,22,27,20,12,21,12,9
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 7 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_1776
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 13,18,22,12,24,9,19,19,9,25
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 4 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_1778
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 28,15,9,19,12,15,13,13,12,11
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 7 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_1782
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 6,6,12,13,9,3,6,14,9,12
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 1 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_1786
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 13,29,18,9,13,18,9,13,13,19
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 7 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_1789
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 11,12,14,20,15,10,24,15,12,9
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 6 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_180
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 3,11,8,6,19,14,14,14,22,11
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 1 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_1800
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 13,27,16,15,13,10,14,9,13,20
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 8 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_1813
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 9,7,6,10,7,3,3,6,11,10
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 2 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_1824
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 10,15,14,20,12,20,14,17,9,13
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 7 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_1845
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 13,14,16,11,13,7,18,13,13,6
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 1 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_1860
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 16,11,21,17,12,12,17,13,11,9
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 4 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_1863
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 11,13,16,16,13,12,25,14,10,9
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 4 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_1864
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 10,9,17,6,10,9,14,6,15,22
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 1 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_1868
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 14,9,13,14,11,11,9,9,14,14
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 7 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_1879
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 6,16,13,13,11,19,11,6,14,9
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 5 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_1911
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 10,14,12,17,13,9,10,16,10,9
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 4 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_1914
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 17,9,15,6,14,7,6,10,11,12
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 4 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_1927
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 9,18,14,15,15,9,17,18,11,6
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 4 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_1962
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 10,12,11,14,11,7,9,9,18,7
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 4 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_1975
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 11,10,13,11,18,9,9,13,12,24
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 7 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_1979
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 18,9,14,7,12,26,23,11,8,12
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 6 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_1984
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 9,14,21,9,9,25,27,10,16,16
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 7 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_1985
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 14,13,9,4,11,13,8,9,10,18
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 1 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_2001
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 13,17,17,11,19,11,16,9,12,17
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 8 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_2021
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 14,14,18,22,11,10,12,22,14,13
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 9 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_2038
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 16,13,25,22,9,18,18,17,14,9
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 7 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_2049
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 10,6,11,14,12,20,9,16,14,11
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 1 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_2052
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 18,18,13,12,15,16,17,17,19,16
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 10 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_2074
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 19,18,18,20,18,22,15,18,17,13
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 5 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_2083
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 9,9,11,11,7,10,12,8,14,7
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 1 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_2088
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 11,9,14,13,16,7,8,10,13,14
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 5 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_2093
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 12,14,11,12,9,14,9,12,21,6
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 5 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_2107
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 30,7,15,34,12,6,12,6,12,10
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 1 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_2108
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 17,14,18,13,21,16,21,15,21,12
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 11 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_2115
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 24,27,29,21,24,25,19,18,22,43
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 13 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_2124
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 13,10,12,9,9,17,15,15,13,9
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 4 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_2125
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 27,12,11,13,16,9,12,9,15,13
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 7 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_2126
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 15,18,22,15,15,18,12,21,17,18
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 7 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_2136
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 6,8,7,11,7,17,11,9,14,6
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 1 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_2137
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 19,15,22,24,26,22,15,18,20,33
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 14 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_2138
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 18,12,18,14,6,20,13,13,17,11
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 5 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_2140
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 9,12,10,19,10,15,19,16,9,6
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 4 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_2142
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 16,28,15,16,17,18,19,9,14,13
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 5 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_2149
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 18,24,22,24,32,22,26,29,28,25
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 16 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_2198
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 19,6,21,18,6,9,6,17,12,13
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 4 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_221
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 17,27,33,17,15,16,23,20,21,18
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 14 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_2210
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 15,19,13,16,24,12,19,19,21,15
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 11 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_2224
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 18,14,15,16,12,21,18,12,14,19
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 10 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_223
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 7,17,6,7,9,14,6,7,11,12
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 1 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_2233
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 14,15,12,10,22,14,24,10,9,12
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 4 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_2234
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 13,22,10,10,9,10,13,9,9,11
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 7 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_2241
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 12,12,11,12,15,13,9,7,9,3
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 1 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_2250
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 23,6,16,13,9,21,21,13,12,10
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 4 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_2251
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 9,13,10,17,9,14,9,16,21,14
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 6 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_2254
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 26,28,21,18,28,18,23,25,18,17
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 15 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_2258
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 16,12,12,10,9,16,17,14,17,18
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 5 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_2259
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 18,15,19,15,15,13,13,12,19,12
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 11 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_2273
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 14,15,14,12,8,16,13,10,13,9
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 1 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_228
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 15,12,14,15,13,12,14,21,27,12
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 9 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_2286
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 22,13,9,10,20,10,17,15,14,13
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 6 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_2294
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 20,6,8,12,15,7,10,10,9,9
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 5 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_2299
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 12,12,16,22,13,13,19,21,12,17
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 7 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_2305
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 10,13,12,13,15,9,13,15,18,15
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 8 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_256
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 21,20,10,13,9,14,17,13,14,12
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 6 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_354
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 19,15,9,12,15,20,23,9,16,17
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 7 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_357
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 9,17,18,17,9,10,15,15,17,14
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 8 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_377
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 14,9,11,19,14,15,10,18,12,27
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 4 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_434
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 14,18,17,10,9,7,11,12,10,8
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 1 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_443
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 11,8,13,25,16,16,13,11,18,11
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 7 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_450
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 16,11,14,12,17,16,23,18,14,16
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 8 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_464
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 12,9,15,13,10,14,16,21,14,9
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 6 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_522
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 9,13,21,14,6,5,10,8,7,10
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 4 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_536
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 7,3,8,6,10,11,11,8,13,15
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 1 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_537
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 14,16,19,18,14,14,12,13,14,13
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 10 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_592
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 15,13,13,20,17,19,15,12,16,14
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 10 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_602
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 11,16,19,15,17,12,10,20,12,16
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 6 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_622
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 21,12,16,12,10,13,14,13,16,20
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 9 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_625
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 17,15,19,21,12,12,13,18,24,17
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 9 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_626
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 17,13,10,16,10,16,23,17,10,16
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 5 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_627
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 24,11,15,10,6,11,13,10,15,17
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 5 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_628
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 12,13,13,9,23,14,18,11,15,16
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 7 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_646
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 15,9,11,18,11,21,21,12,14,23
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 8 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_647
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 19,17,15,14,26,21,16,31,16,14
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 13 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_729
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 15,16,13,21,13,12,14,11,12,11
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 7 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_772
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 12,14,12,14,12,9,16,9,16,10
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 7 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_861
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 15,22,10,16,14,19,20,13,17,15
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 8 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_88
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 15,14,16,10,11,16,24,18,9,9
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 4 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_913
+LOG (apply-cmvn[5.5.891~1-37628]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 4056 utterances, errors on 0
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 18,15,16,18,18,10,13,16,14,14
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 9 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_971
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 17,15,15,15,19,11,13,10,19,19
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 6 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_977
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 7,7,11,15,3,8,11,9,19,12
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 1 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_984
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 10,29,12,14,9,20,17,9,14,14
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 8 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1036_990
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:109) Computed 3789 alignments; 0 lacked features, 267 had other errors.
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1029_1024
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1029_1041
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 50 utterances; for utterance 1029_1059 avg. like is -109.022 over 22 frames.
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1029_1078
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1029_1094
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1029_1104
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 100 utterances; for utterance 1029_1115 avg. like is -126.185 over 18 frames.
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1029_1119
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1029_1124
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1029_1143
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1029_1147
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1029_1152
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 150 utterances; for utterance 1029_1175 avg. like is -110.208 over 42 frames.
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 200 utterances; for utterance 1029_1227 avg. like is -87.96 over 41 frames.
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 250 utterances; for utterance 1029_1274 avg. like is -105.847 over 62 frames.
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1029_1290
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 300 utterances; for utterance 1029_1327 avg. like is -93.2976 over 17 frames.
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1029_140
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1029_142
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1029_159
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 350 utterances; for utterance 1029_17 avg. like is -95.5553 over 26 frames.
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1029_185
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1029_190
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 400 utterances; for utterance 1029_225 avg. like is -93.5729 over 11 frames.
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1029_262
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 450 utterances; for utterance 1029_289 avg. like is -92.9055 over 10 frames.
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1029_292
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1029_302
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1029_316
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 500 utterances; for utterance 1029_345 avg. like is -106.831 over 52 frames.
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 550 utterances; for utterance 1029_408 avg. like is -121.058 over 21 frames.
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1029_443
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1029_451
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1029_454
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1029_459
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 600 utterances; for utterance 1029_464 avg. like is -119.515 over 46 frames.
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1029_505
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 650 utterances; for utterance 1029_520 avg. like is -99.5233 over 63 frames.
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1029_522
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1029_543
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1029_546
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 700 utterances; for utterance 1029_577 avg. like is -107.782 over 12 frames.
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1029_578
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1029_584
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1029_593
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1029_616
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1029_626
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 750 utterances; for utterance 1029_641 avg. like is -117.048 over 29 frames.
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1029_645
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1029_674
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1029_678
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1029_69
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 800 utterances; for utterance 1029_704 avg. like is -110.706 over 9 frames.
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1029_745
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1029_752
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 850 utterances; for utterance 1029_763 avg. like is -101.053 over 60 frames.
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1029_765
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1029_772
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1029_799
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 900 utterances; for utterance 1029_819 avg. like is -105.098 over 32 frames.
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1029_821
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1029_870
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 950 utterances; for utterance 1029_873 avg. like is -109.336 over 18 frames.
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1029_910
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 1000 utterances; for utterance 1029_929 avg. like is -135.215 over 21 frames.
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1029_933
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1029_953
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1029_970
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 1050 utterances; for utterance 1029_986 avg. like is -101.154 over 37 frames.
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1032_100
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1032_1026
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1032_1027
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1032_1030
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 1100 utterances; for utterance 1032_1038 avg. like is -114.432 over 23 frames.
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1032_1052
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1032_1060
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1032_1069
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 1150 utterances; for utterance 1032_1093 avg. like is -111.385 over 24 frames.
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1032_1102
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1032_1128
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1032_1133
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1032_1134
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 1200 utterances; for utterance 1032_1149 avg. like is -102.463 over 20 frames.
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1032_1151
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1032_1158
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1032_1163
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1032_1166
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 1250 utterances; for utterance 1032_1204 avg. like is -107.994 over 16 frames.
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1032_1220
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1032_123
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 1300 utterances; for utterance 1032_154 avg. like is -110.422 over 38 frames.
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1032_172
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1032_173
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1032_183
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1032_195
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 1350 utterances; for utterance 1032_205 avg. like is -100.186 over 34 frames.
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1032_212
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1032_232
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1032_247
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1032_248
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1032_250
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 1400 utterances; for utterance 1032_262 avg. like is -105.049 over 39 frames.
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1032_270
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1032_275
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1032_28
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1032_292
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1032_302
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 1450 utterances; for utterance 1032_32 avg. like is -97.4831 over 15 frames.
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1032_324
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1032_350
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1032_359
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1032_363
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1032_364
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1032_374
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 1500 utterances; for utterance 1032_378 avg. like is -110.479 over 20 frames.
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1032_392
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1032_412
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 1550 utterances; for utterance 1032_430 avg. like is -108.558 over 15 frames.
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1032_445
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1032_455
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1032_459
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1032_462
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1032_466
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1032_469
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1032_480
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1032_486
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 1600 utterances; for utterance 1032_487 avg. like is -97.8308 over 12 frames.
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1032_495
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1032_50
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1032_508
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1032_509
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1032_517
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1032_524
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1032_534
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1032_535
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 1650 utterances; for utterance 1032_543 avg. like is -111.74 over 10 frames.
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1032_556
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1032_573
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1032_581
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1032_583
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1032_588
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1032_596
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 1700 utterances; for utterance 1032_601 avg. like is -97.2354 over 19 frames.
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1032_627
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1032_628
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1032_639
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 1750 utterances; for utterance 1032_653 avg. like is -113.467 over 9 frames.
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1032_660
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1032_674
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1032_686
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 1800 utterances; for utterance 1032_707 avg. like is -115.348 over 11 frames.
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1032_720
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1032_744
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1032_748
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1032_751
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1032_753
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 1850 utterances; for utterance 1032_762 avg. like is -94.6094 over 22 frames.
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1032_791
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1032_809
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 1900 utterances; for utterance 1032_815 avg. like is -110.601 over 51 frames.
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1032_817
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1032_82
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1032_832
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1032_842
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1032_851
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1032_853
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1032_863
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1032_865
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 1950 utterances; for utterance 1032_874 avg. like is -102.971 over 22 frames.
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1032_890
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1032_892
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1032_916
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1032_919
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 2000 utterances; for utterance 1032_934 avg. like is -111.611 over 9 frames.
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1032_942
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1032_954
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1032_968
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1032_97
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 2050 utterances; for utterance 1032_989 avg. like is -122.953 over 16 frames.
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1032_99
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1032_993
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1032_994
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 2100 utterances; for utterance 1036_1040 avg. like is -113.124 over 9 frames.
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_1068
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_1077
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 2150 utterances; for utterance 1036_1094 avg. like is -100.461 over 10 frames.
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_1121
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 2200 utterances; for utterance 1036_1156 avg. like is -98.5789 over 18 frames.
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_1189
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_1198
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_1199
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_1201
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_1215
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 2250 utterances; for utterance 1036_1222 avg. like is -112.557 over 9 frames.
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_1229
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_123
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_1233
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_1234
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_1247
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_1271
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_1280
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 2300 utterances; for utterance 1036_1282 avg. like is -93.028 over 17 frames.
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_1299
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_1313
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_1333
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_134
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 2350 utterances; for utterance 1036_1342 avg. like is -97.1782 over 40 frames.
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_1347
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 2400 utterances; for utterance 1036_14 avg. like is -89.4202 over 63 frames.
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_1426
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 2450 utterances; for utterance 1036_1456 avg. like is -107.363 over 50 frames.
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_1460
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_1483
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 2500 utterances; for utterance 1036_1505 avg. like is -92.6626 over 60 frames.
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_1551
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_1552
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 2550 utterances; for utterance 1036_1562 avg. like is -107.295 over 15 frames.
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 2600 utterances; for utterance 1036_1617 avg. like is -98.1091 over 75 frames.
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_1624
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_1672
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 2650 utterances; for utterance 1036_1674 avg. like is -98.1894 over 44 frames.
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 2700 utterances; for utterance 1036_1732 avg. like is -105.145 over 35 frames.
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_1737
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_1738
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_1744
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_1759
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_176
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_1769
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_1774
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_1776
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_1778
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_1782
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_1786
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_1789
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_180
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_1800
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_1813
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 2750 utterances; for utterance 1036_1815 avg. like is -94.9071 over 19 frames.
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_1824
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_1845
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_1860
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_1863
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_1864
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_1868
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 2800 utterances; for utterance 1036_1875 avg. like is -119.581 over 15 frames.
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_1879
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_1911
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_1914
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_1927
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 2850 utterances; for utterance 1036_1936 avg. like is -111.446 over 34 frames.
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_1962
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_1975
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_1979
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_1984
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_1985
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 2900 utterances; for utterance 1036_200 avg. like is -93.3923 over 10 frames.
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_2001
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_2021
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_2038
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_2049
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_2052
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 2950 utterances; for utterance 1036_2062 avg. like is -103.567 over 38 frames.
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_2074
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_2083
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_2088
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_2093
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_2107
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_2108
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_2115
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_2124
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_2125
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_2126
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 3000 utterances; for utterance 1036_2131 avg. like is -104.748 over 15 frames.
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_2136
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_2137
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_2138
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_2140
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_2142
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_2149
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 3050 utterances; for utterance 1036_2196 avg. like is -99.686 over 11 frames.
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_2198
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_221
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_2210
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_2224
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_223
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_2233
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_2234
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_2241
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_2250
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_2251
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_2254
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_2258
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_2259
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 3100 utterances; for utterance 1036_2265 avg. like is -121.948 over 41 frames.
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_2273
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_228
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_2286
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_2294
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_2299
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_2305
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 3150 utterances; for utterance 1036_249 avg. like is -94.792 over 44 frames.
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_256
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 3200 utterances; for utterance 1036_311 avg. like is -103.808 over 19 frames.
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_354
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_357
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 3250 utterances; for utterance 1036_368 avg. like is -88.665 over 28 frames.
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_377
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 3300 utterances; for utterance 1036_426 avg. like is -103.009 over 7 frames.
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_434
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_443
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_450
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_464
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 3350 utterances; for utterance 1036_487 avg. like is -100.449 over 22 frames.
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_522
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_536
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_537
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 3400 utterances; for utterance 1036_549 avg. like is -104.232 over 30 frames.
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_592
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_602
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 3450 utterances; for utterance 1036_606 avg. like is -95.6845 over 15 frames.
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_622
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_625
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_626
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_627
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_628
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_646
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_647
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 3500 utterances; for utterance 1036_667 avg. like is -110.849 over 14 frames.
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 3550 utterances; for utterance 1036_724 avg. like is -108.457 over 33 frames.
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_729
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_772
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 3600 utterances; for utterance 1036_786 avg. like is -90.4347 over 72 frames.
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 3650 utterances; for utterance 1036_838 avg. like is -106.772 over 11 frames.
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_861
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_88
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 3700 utterances; for utterance 1036_896 avg. like is -107.707 over 20 frames.
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_913
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 3750 utterances; for utterance 1036_951 avg. like is -106.623 over 45 frames.
+LOG (apply-cmvn[5.5.891~1-37628]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 4056 utterances, errors on 0
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_971
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_977
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_984
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1036_990
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:112) Done 3789 files, 267 with errors.
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:115) Overall avg like per frame (Gaussian only) = -103.429 over 112444 frames.
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:123) Written accs.
+# Accounting: time=1 threads=1
+# Ended (code 0) at Fri Mar 12 17:34:07 CET 2021, elapsed time 1 seconds

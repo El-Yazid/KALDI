@@ -1,0 +1,8 @@
+with open("utt2spk","r",encoding="utf-8")as fi:
+	with open("text2","w",encoding="utf-8")as fi1:
+		lines=fi.readlines()
+		for i in lines:
+			text=i.split("_")
+			f=i[:-1]+" "+text[0]+"\n"
+			fi1.write(f)
+
