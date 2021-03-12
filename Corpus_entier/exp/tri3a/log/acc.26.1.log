@@ -1,0 +1,41 @@
+# gmm-acc-stats-ali exp/tri3a/26.mdl "ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split2/1/utt2spk scp:data/train/split2/1/cmvn.scp scp:data/train/split2/1/feats.scp ark:- | splice-feats  ark:- ark:- | transform-feats exp/tri3a/12.mat ark:- ark:- |" "ark,s,cs:gunzip -c exp/tri3a/ali.1.gz|" exp/tri3a/26.1.acc 
+# Started at Fri Mar 12 14:32:56 CET 2021
+#
+gmm-acc-stats-ali exp/tri3a/26.mdl 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split2/1/utt2spk scp:data/train/split2/1/cmvn.scp scp:data/train/split2/1/feats.scp ark:- | splice-feats  ark:- ark:- | transform-feats exp/tri3a/12.mat ark:- ark:- |' 'ark,s,cs:gunzip -c exp/tri3a/ali.1.gz|' exp/tri3a/26.1.acc 
+transform-feats exp/tri3a/12.mat ark:- ark:- 
+apply-cmvn --utt2spk=ark:data/train/split2/1/utt2spk scp:data/train/split2/1/cmvn.scp scp:data/train/split2/1/feats.scp ark:- 
+splice-feats ark:- ark:- 
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1016_locuteur1_125_l
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1016_locuteur1_125_r
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 50 utterances; for utterance 1016_locuteur1_142_r avg. like is -52.5738 over 159 frames.
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 100 utterances; for utterance 1016_locuteur1_184_r avg. like is -52.1693 over 405 frames.
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 150 utterances; for utterance 1016_locuteur1_229_r avg. like is -50.5663 over 447 frames.
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 200 utterances; for utterance 1016_locuteur1_271_r avg. like is -44.8929 over 214 frames.
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 250 utterances; for utterance 1016_locuteur1_315_r avg. like is -53.052 over 129 frames.
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 300 utterances; for utterance 1016_locuteur1_71_r avg. like is -42.9477 over 268 frames.
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 350 utterances; for utterance 1016_locuteur2_10_r avg. like is -46.5547 over 157 frames.
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 400 utterances; for utterance 1016_locuteur2_159_r avg. like is -39.2581 over 414 frames.
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 450 utterances; for utterance 1016_locuteur2_209_r avg. like is -40.5592 over 105 frames.
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 500 utterances; for utterance 1016_locuteur2_262_r avg. like is -46.8392 over 150 frames.
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 550 utterances; for utterance 1016_locuteur2_6_r avg. like is -40.5021 over 206 frames.
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 600 utterances; for utterance 1022_24_r avg. like is -48.248 over 379 frames.
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 650 utterances; for utterance 1022_69_r avg. like is -41.1443 over 209 frames.
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 700 utterances; for utterance 1023_115_r avg. like is -53.6283 over 58 frames.
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 750 utterances; for utterance 1023_156_r avg. like is -55.4093 over 127 frames.
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 800 utterances; for utterance 1023_200_r avg. like is -48.3468 over 83 frames.
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 850 utterances; for utterance 1023_245_r avg. like is -45.3714 over 98 frames.
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 900 utterances; for utterance 1023_58_r avg. like is -49.2651 over 101 frames.
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 950 utterances; for utterance 1023_99_r avg. like is -58.2121 over 177 frames.
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 1000 utterances; for utterance 1024_143_r avg. like is -40.8903 over 159 frames.
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1024_185_l
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1024_185_r
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 1050 utterances; for utterance 1024_1_r avg. like is -27.3585 over 449 frames.
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 1100 utterances; for utterance 1024_63_r avg. like is -41.5488 over 70 frames.
+LOG (apply-cmvn[5.5.891~1-37628]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 1144 utterances, errors on 0
+LOG (transform-feats[5.5.891~1-37628]:main():transform-feats.cc:158) Overall average [pseudo-]logdet is -90.7687 over 245538 frames.
+LOG (transform-feats[5.5.891~1-37628]:main():transform-feats.cc:161) Applied transform to 1144 utterances; 0 had errors.
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:112) Done 1140 files, 4 with errors.
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:115) Overall avg like per frame (Gaussian only) = -46.1797 over 245024 frames.
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:123) Written accs.
+# Accounting: time=1 threads=1
+# Ended (code 0) at Fri Mar 12 14:32:57 CET 2021, elapsed time 1 seconds

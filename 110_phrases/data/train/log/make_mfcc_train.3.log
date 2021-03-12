@@ -1,0 +1,61 @@
+# compute-mfcc-feats --write-utt2dur=ark,t:./data/train/log/utt2dur.3 --verbose=2 --config=conf/mfcc.conf scp,p:./data/train/log/wav_train.3.scp ark:- | copy-feats --write-num-frames=ark,t:./data/train/log/utt2num_frames.3 --compress=true ark:- ark,scp:/home/el-yazid/kaldi/egs/cream/./data/train/data/raw_mfcc_train.3.ark,/home/el-yazid/kaldi/egs/cream/./data/train/data/raw_mfcc_train.3.scp 
+# Started at Mon Mar  8 17:00:10 CET 2021
+#
+copy-feats --write-num-frames=ark,t:./data/train/log/utt2num_frames.3 --compress=true ark:- ark,scp:/home/el-yazid/kaldi/egs/cream/./data/train/data/raw_mfcc_train.3.ark,/home/el-yazid/kaldi/egs/cream/./data/train/data/raw_mfcc_train.3.scp 
+compute-mfcc-feats --write-utt2dur=ark,t:./data/train/log/utt2dur.3 --verbose=2 --config=conf/mfcc.conf scp,p:./data/train/log/wav_train.3.scp ark:- 
+WARNING (compute-mfcc-feats[5.5.891~1-37628]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.891~1-37628]:main():compute-mfcc-feats.cc:182) Processed features for key 1028_141
+WARNING (compute-mfcc-feats[5.5.891~1-37628]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.891~1-37628]:main():compute-mfcc-feats.cc:182) Processed features for key 1028_164
+WARNING (compute-mfcc-feats[5.5.891~1-37628]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.891~1-37628]:main():compute-mfcc-feats.cc:182) Processed features for key 1028_36
+WARNING (compute-mfcc-feats[5.5.891~1-37628]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.891~1-37628]:main():compute-mfcc-feats.cc:182) Processed features for key 1028_38
+WARNING (compute-mfcc-feats[5.5.891~1-37628]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.891~1-37628]:main():compute-mfcc-feats.cc:182) Processed features for key 1028_40
+WARNING (compute-mfcc-feats[5.5.891~1-37628]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.891~1-37628]:main():compute-mfcc-feats.cc:182) Processed features for key 1028_44
+WARNING (compute-mfcc-feats[5.5.891~1-37628]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.891~1-37628]:main():compute-mfcc-feats.cc:182) Processed features for key 1028_67
+WARNING (compute-mfcc-feats[5.5.891~1-37628]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.891~1-37628]:main():compute-mfcc-feats.cc:182) Processed features for key 1028_69
+WARNING (compute-mfcc-feats[5.5.891~1-37628]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.891~1-37628]:main():compute-mfcc-feats.cc:182) Processed features for key 1028_77
+WARNING (compute-mfcc-feats[5.5.891~1-37628]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+LOG (compute-mfcc-feats[5.5.891~1-37628]:main():compute-mfcc-feats.cc:181) Processed 10 utterances
+VLOG[2] (compute-mfcc-feats[5.5.891~1-37628]:main():compute-mfcc-feats.cc:182) Processed features for key 1029_122
+WARNING (compute-mfcc-feats[5.5.891~1-37628]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.891~1-37628]:main():compute-mfcc-feats.cc:182) Processed features for key 1029_126
+WARNING (compute-mfcc-feats[5.5.891~1-37628]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.891~1-37628]:main():compute-mfcc-feats.cc:182) Processed features for key 1029_137
+WARNING (compute-mfcc-feats[5.5.891~1-37628]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.891~1-37628]:main():compute-mfcc-feats.cc:182) Processed features for key 1029_157
+WARNING (compute-mfcc-feats[5.5.891~1-37628]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.891~1-37628]:main():compute-mfcc-feats.cc:182) Processed features for key 1029_191
+WARNING (compute-mfcc-feats[5.5.891~1-37628]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.891~1-37628]:main():compute-mfcc-feats.cc:182) Processed features for key 1029_82
+WARNING (compute-mfcc-feats[5.5.891~1-37628]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.891~1-37628]:main():compute-mfcc-feats.cc:182) Processed features for key 1029_84
+WARNING (compute-mfcc-feats[5.5.891~1-37628]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.891~1-37628]:main():compute-mfcc-feats.cc:182) Processed features for key 1029_88
+WARNING (compute-mfcc-feats[5.5.891~1-37628]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.891~1-37628]:main():compute-mfcc-feats.cc:182) Processed features for key 1029_92
+WARNING (compute-mfcc-feats[5.5.891~1-37628]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.891~1-37628]:main():compute-mfcc-feats.cc:182) Processed features for key 1029_94
+WARNING (compute-mfcc-feats[5.5.891~1-37628]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+LOG (compute-mfcc-feats[5.5.891~1-37628]:main():compute-mfcc-feats.cc:181) Processed 20 utterances
+VLOG[2] (compute-mfcc-feats[5.5.891~1-37628]:main():compute-mfcc-feats.cc:182) Processed features for key 1032_103
+WARNING (compute-mfcc-feats[5.5.891~1-37628]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.891~1-37628]:main():compute-mfcc-feats.cc:182) Processed features for key 1032_111
+WARNING (compute-mfcc-feats[5.5.891~1-37628]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.891~1-37628]:main():compute-mfcc-feats.cc:182) Processed features for key 1032_20
+WARNING (compute-mfcc-feats[5.5.891~1-37628]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.891~1-37628]:main():compute-mfcc-feats.cc:182) Processed features for key 1032_22
+WARNING (compute-mfcc-feats[5.5.891~1-37628]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.891~1-37628]:main():compute-mfcc-feats.cc:182) Processed features for key 1032_29
+WARNING (compute-mfcc-feats[5.5.891~1-37628]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.891~1-37628]:main():compute-mfcc-feats.cc:182) Processed features for key 1032_45
+LOG (compute-mfcc-feats[5.5.891~1-37628]:main():compute-mfcc-feats.cc:185)  Done 25 out of 25 utterances.
+LOG (copy-feats[5.5.891~1-37628]:main():copy-feats.cc:143) Copied 25 feature matrices.
+# Accounting: time=1 threads=1
+# Ended (code 0) at Mon Mar  8 17:00:11 CET 2021, elapsed time 1 seconds

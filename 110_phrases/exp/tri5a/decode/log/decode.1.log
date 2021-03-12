@@ -1,0 +1,38 @@
+# gmm-latgen-faster --max-active=7000 --beam=13.0 --lattice-beam=6.0 --acoustic-scale=0.083333 --determinize-lattice=false --allow-partial=true --word-symbol-table=exp/tri5a/graph/words.txt exp/tri5a/final.mdl exp/tri5a/graph/HCLG.fst "ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split1/1/utt2spk scp:data/test/split1/1/cmvn.scp scp:data/test/split1/1/feats.scp ark:- | splice-feats  ark:- ark:- | transform-feats exp/tri5a/final.mat ark:- ark:- | transform-feats --utt2spk=ark:data/test/split1/1/utt2spk ark:exp/tri5a/decode/pre_trans.1 ark:- ark:- |" "ark:|gzip -c > exp/tri5a/decode/lat.tmp.1.gz" 
+# Started at Fri Mar 12 16:43:52 CET 2021
+#
+gmm-latgen-faster --max-active=7000 --beam=13.0 --lattice-beam=6.0 --acoustic-scale=0.083333 --determinize-lattice=false --allow-partial=true --word-symbol-table=exp/tri5a/graph/words.txt exp/tri5a/final.mdl exp/tri5a/graph/HCLG.fst 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split1/1/utt2spk scp:data/test/split1/1/cmvn.scp scp:data/test/split1/1/feats.scp ark:- | splice-feats  ark:- ark:- | transform-feats exp/tri5a/final.mat ark:- ark:- | transform-feats --utt2spk=ark:data/test/split1/1/utt2spk ark:exp/tri5a/decode/pre_trans.1 ark:- ark:- |' 'ark:|gzip -c > exp/tri5a/decode/lat.tmp.1.gz' 
+transform-feats exp/tri5a/final.mat ark:- ark:- 
+transform-feats --utt2spk=ark:data/test/split1/1/utt2spk ark:exp/tri5a/decode/pre_trans.1 ark:- ark:- 
+apply-cmvn --utt2spk=ark:data/test/split1/1/utt2spk scp:data/test/split1/1/cmvn.scp scp:data/test/split1/1/feats.scp ark:- 
+splice-feats ark:- ark:- 
+LOG (apply-cmvn[5.5.891~1-37628]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 10 utterances, errors on 0
+1041_100 adan on 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_100 is -5.08704 over 87 frames.
+1041_106 ka tann ou ka 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_106 is -5.32306 over 142 frames.
+1041_108 ka tann ou pa ay pòté plent poukwa ou pa ay 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_108 is -5.15297 over 382 frames.
+1041_42 ki kanmen ki pou nou 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_42 is -5.07408 over 276 frames.
+1041_50 mè pa ni vwè ou pa ay 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_50 is -5.22876 over 285 frames.
+1041_56 kay kon laplipa ka tann 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_56 is -5.47331 over 284 frames.
+1041_67 an ka tann 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_67 is -5.02629 over 94 frames.
+LOG (transform-feats[5.5.891~1-37628]:main():transform-feats.cc:158) Overall average [pseudo-]logdet is -69.1217 over 2682 frames.
+LOG (transform-feats[5.5.891~1-37628]:main():transform-feats.cc:161) Applied transform to 10 utterances; 0 had errors.
+1041_71 abon ni plas sa tout sa ka ka poukwa ou pa ki 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_71 is -5.08335 over 498 frames.
+LOG (transform-feats[5.5.891~1-37628]:main():transform-feats.cc:158) Overall average logdet is 0.295093 over 2682 frames.
+LOG (transform-feats[5.5.891~1-37628]:main():transform-feats.cc:161) Applied transform to 10 utterances; 0 had errors.
+1041_82 té ka jiska la ka pa ka tann 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_82 is -5.07179 over 383 frames.
+1041_88 tou sa an pa ka tann 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_88 is -5.42167 over 251 frames.
+LOG (gmm-latgen-faster[5.5.891~1-37628]:main():gmm-latgen-faster.cc:176) Time taken 14.4027s: real-time factor assuming 100 frames/sec is 0.537012
+LOG (gmm-latgen-faster[5.5.891~1-37628]:main():gmm-latgen-faster.cc:179) Done 10 utterances, failed for 0
+LOG (gmm-latgen-faster[5.5.891~1-37628]:main():gmm-latgen-faster.cc:181) Overall log-likelihood per frame is -5.18988 over 2682 frames.
+# Accounting: time=14 threads=1
+# Ended (code 0) at Fri Mar 12 16:44:06 CET 2021, elapsed time 14 seconds

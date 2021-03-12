@@ -1,0 +1,874 @@
+# gmm-latgen-faster --max-active=7000 --beam=13.0 --lattice-beam=6.0 --acoustic-scale=0.083333 --allow-partial=true --word-symbol-table=exp/mono/graph/words.txt exp/mono/final.mdl exp/mono/graph/HCLG.fst "ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split2/2/utt2spk scp:data/test/split2/2/cmvn.scp scp:data/test/split2/2/feats.scp ark:- | add-deltas  ark:- ark:- |" "ark:|gzip -c > exp/mono/decode/lat.2.gz" 
+# Started at Fri Mar 12 13:06:14 CET 2021
+#
+gmm-latgen-faster --max-active=7000 --beam=13.0 --lattice-beam=6.0 --acoustic-scale=0.083333 --allow-partial=true --word-symbol-table=exp/mono/graph/words.txt exp/mono/final.mdl exp/mono/graph/HCLG.fst 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split2/2/utt2spk scp:data/test/split2/2/cmvn.scp scp:data/test/split2/2/feats.scp ark:- | add-deltas  ark:- ark:- |' 'ark:|gzip -c > exp/mono/decode/lat.2.gz' 
+add-deltas ark:- ark:- 
+apply-cmvn --utt2spk=ark:data/test/split2/2/utt2spk scp:data/test/split2/2/cmvn.scp scp:data/test/split2/2/feats.scp ark:- 
+1041_0_l ça fifi t'ai tini temps fait l'anmou èvè on réjyon 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_0_l is -7.63688 over 654 frames.
+1041_0_r ça fifi t'ai tini temps fait l'anmou èvè on jou siren 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_0_r is -7.71881 over 654 frames.
+1041_100_l an menndé 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_100_l is -8.42616 over 87 frames.
+1041_100_r an mwen 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_100_r is -8.41206 over 87 frames.
+1041_102_l é é 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_102_l is -7.98713 over 29 frames.
+1041_102_r é é 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_102_r is -7.90677 over 29 frames.
+1041_104_l an ké ba-ou lajan 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_104_l is -7.44356 over 405 frames.
+1041_104_r an ké ba-ou lajan 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_104_r is -7.5007 over 405 frames.
+1041_106_l té ka tann-yo ka palé dè fès 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_106_l is -8.4608 over 142 frames.
+1041_106_r té ka tann-yo ka palé dè fès 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_106_r is -8.52232 over 142 frames.
+1041_108_l ka pran on poban ki ka kom an ka di 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_108_l is -8.00914 over 382 frames.
+1041_108_r ka pran on poban ki ka kom an ka vin 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_108_r is -8.14128 over 382 frames.
+1041_10_l soti ki té 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_10_l is -7.3559 over 181 frames.
+1041_10_r sa vlé di nou ki té 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_10_r is -7.52007 over 181 frames.
+1041_110_l é ki 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_110_l is -7.20351 over 98 frames.
+1041_110_r é ki 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_110_r is -7.23452 over 98 frames.
+1041_112_l ou di mwen ké é 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_112_l is -7.33244 over 267 frames.
+1041_112_r yo di mwen ké é 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_112_r is -7.40501 over 267 frames.
+1041_113_l son kès san manti ki nou pou nou té 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_113_l is -7.56694 over 373 frames.
+1041_113_r paské san manti ki nou pou nou té 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_113_r is -7.65027 over 373 frames.
+1041_115_l médikaman 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_115_l is -8.07872 over 98 frames.
+1041_115_r médikaman 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_115_r is -8.09201 over 98 frames.
+1041_117_l fèt èvè zanmi a yo toupannan i résisté soti an vant a lalit 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_117_l is -7.89379 over 556 frames.
+1041_117_r fèt èvè zanmi a yo toupannan i té soti an vant a lalit 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_117_r is -7.96436 over 556 frames.
+1041_119_l alé kwa pou lité 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_119_l is -7.42901 over 200 frames.
+1041_119_r alé kwa tandis ké é 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_119_r is -7.49575 over 200 frames.
+1041_121_l timafi 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_121_l is -7.88681 over 65 frames.
+1041_121_r ou ka fè-y non 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_121_r is -7.88968 over 65 frames.
+1041_123_l an pa ka pèmèt 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_123_l is -8.41061 over 97 frames.
+1041_123_r an k’ay an pèd lakat 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_123_r is -8.35837 over 97 frames.
+1041_125_l ki 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_125_l is -7.07448 over 60 frames.
+1041_125_r ki 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_125_r is -7.0492 over 60 frames.
+1041_127_l jou 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_127_l is -9.12389 over 53 frames.
+1041_127_r 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_127_r is -9.26207 over 53 frames.
+1041_129_l apati dè jèn la sa 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_129_l is -8.58493 over 95 frames.
+1041_129_r apati dè jèn la sa 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_129_r is -8.73157 over 95 frames.
+1041_12_l dé biten ki té 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_12_l is -7.5753 over 144 frames.
+1041_12_r dé biten ki 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_12_r is -7.52627 over 144 frames.
+1041_131_l té ka manjé kat pignon kaz 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_131_l is -8.00247 over 274 frames.
+1041_131_r mé daprè mwen différentes 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_131_r is -8.10199 over 274 frames.
+1041_133_l tout sa palé dè san sanm 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_133_l is -7.88356 over 312 frames.
+1041_133_r ka palé dè san sanm 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_133_r is -7.96017 over 312 frames.
+1041_135_l touf lafimé 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_135_l is -7.23734 over 146 frames.
+1041_135_r tit a pap’an mwen 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_135_r is -7.27723 over 146 frames.
+1041_137_l donk sé on manjé-y biten konsa 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_137_l is -7.60018 over 337 frames.
+1041_137_r dansé on manjé difisil konsa 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_137_r is -7.64548 over 337 frames.
+1041_139_l lenflyans fransè 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_139_l is -8.19541 over 147 frames.
+1041_139_r lenflyans fransè 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_139_r is -8.37561 over 147 frames.
+1041_141_l kon 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_141_l is -8.21351 over 49 frames.
+1041_141_r 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_141_r is -8.1647 over 49 frames.
+1041_143_l an ka di 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_143_l is -9.19073 over 98 frames.
+1041_143_r an ka di 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_143_r is -9.29462 over 98 frames.
+1041_145_l konvwa-la té pwenti apennsi pati landémen 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_145_l is -7.8481 over 515 frames.
+1041_145_r konvwa-la té yenki sa maladi dévenn 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_145_r is -7.91929 over 515 frames.
+1041_147_l très très 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_147_l is -7.9971 over 96 frames.
+1041_147_r très très 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_147_r is -8.13622 over 96 frames.
+1041_149_l ki koté moun ka pwan on tipla mélanj 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_149_l is -7.31526 over 558 frames.
+1041_149_r ki koté moun ka pwan on tipla mélanj 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_149_r is -7.34788 over 558 frames.
+1041_14_l pandan tibou chouk an ké la 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_14_l is -7.68573 over 371 frames.
+1041_14_r pandan tibou chouk an ké la 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_14_r is -7.77801 over 371 frames.
+1041_151_l i di mwen révandiké 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_151_l is -7.9005 over 172 frames.
+1041_151_r i di mwen révandiké 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_151_r is -7.90393 over 172 frames.
+1041_153_l pou mèt tibwen an plat palé fransé osi ki ka disparèt 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_153_l is -7.84458 over 535 frames.
+1041_153_r kon li ni dwèt ka palé fransé osi kwi farin patat 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_153_r is -7.84878 over 535 frames.
+1041_155_l ou pa ka i ka palé kréyol kon sa 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_155_l is -7.65572 over 557 frames.
+1041_155_r ou pa ka di krikett kon sa 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_155_r is -7.72391 over 557 frames.
+1041_157_l jan 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_157_l is -7.98143 over 287 frames.
+1041_157_r jodijou jan 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_157_r is -8.03758 over 287 frames.
+1041_159_l lakat an pa sav 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_159_l is -7.79417 over 151 frames.
+1041_159_r a lépok nou ka 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_159_r is -7.87246 over 151 frames.
+1041_161_l paskè sa donk an té fen la 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_161_l is -7.88753 over 279 frames.
+1041_161_r paskè sa donk an té fen la 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_161_r is -7.88435 over 279 frames.
+1041_163_l krikett té an toujou palé fransé palé kréol palé fransé 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_163_l is -8.05058 over 504 frames.
+1041_163_r é nou toujou palé fransé nou té ka di-w yo ka anonsé 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_163_r is -8.11155 over 504 frames.
+1041_165_l travay an jaden manjé di 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_165_l is -7.75755 over 278 frames.
+1041_165_r lè ja lè an té manjé di 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_165_r is -7.79411 over 278 frames.
+1041_167_l èvè-i i té tifi té kanklo konsa 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_167_l is -7.98069 over 315 frames.
+1041_167_r on bèl vès a’y té toujou té kanklo konsa 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_167_r is -7.98639 over 315 frames.
+1041_16_l ka rété pann an nou dépi ni senkan polin kidonk té si an pa tombé 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_16_l is -7.81923 over 724 frames.
+1041_16_r bat é bat kon tanngo nèg a twonbon nèg ki milat ka palé dè on pèp sizer et c'est en temps bon 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_16_r is -7.87459 over 724 frames.
+1041_170_l tout nèg an frans i té ka viv an frans 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_170_l is -8.55227 over 214 frames.
+1041_170_r tout nèg an frans sé té ka lafan 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_170_r is -8.62243 over 214 frames.
+1041_172_l lapansé tan ou té ka fè yo di dyédonné té ka pran 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_172_l is -8.04361 over 404 frames.
+1041_172_r lapansé tan ou té ka fè yo di dyédonné té ka pran 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_172_r is -8.10985 over 404 frames.
+1041_174_l kon 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_174_l is -8.10968 over 35 frames.
+1041_174_r kon 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_174_r is -8.20152 over 35 frames.
+1041_176_l pandan lè sa té yonn adan nou té ni senkan polin té ka pran 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_176_l is -8.02771 over 452 frames.
+1041_176_r palé dè san mérendyen ki té ni senkan polin té ka ka fè 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_176_r is -8.08083 over 452 frames.
+1041_177_l pou lavi tèt an ka sonjé ola an biten 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_177_l is -7.84457 over 421 frames.
+1041_177_r pou lavi tèt an pa ni toujis senkant lanné si tèt 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_177_r is -7.95015 over 421 frames.
+1041_178_l an kaz an mwen papa pa konnèt papa pa té pé fè 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_178_l is -7.84755 over 561 frames.
+1041_178_r an kaz an mwen papa pa konnèt papa pa té pé fè 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_178_r is -7.95448 over 561 frames.
+1041_180_l lavi an nou ay poté o no 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_180_l is -7.86279 over 232 frames.
+1041_180_r lavi an nou kay kon yè la 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_180_r is -7.88776 over 232 frames.
+1041_182_l lendi 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_182_l is -8.14626 over 119 frames.
+1041_182_r ki libèté 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_182_r is -8.20254 over 119 frames.
+1041_184_l mizè 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_184_l is -8.14957 over 79 frames.
+1041_184_r pran pou-y 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_184_r is -8.16938 over 79 frames.
+1041_186_l jou-lasa menndé baw 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_186_l is -8.04913 over 129 frames.
+1041_186_r jou-lasa menndé baw 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_186_r is -8.01409 over 129 frames.
+1041_188_l bat é bat bat é bat an mwen é fouti désidé kilti an ka fè 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_188_l is -7.97247 over 564 frames.
+1041_188_r pa té ka bat é bat kon mwen é fouti désidé kitty 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_188_r is -8.02061 over 564 frames.
+1041_18_l an té piti 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_18_l is -8.66291 over 85 frames.
+1041_18_r an té piti 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_18_r is -8.74799 over 85 frames.
+1041_190_l tini temps fait i pas t'ai compouanne dévenn 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_190_l is -7.85978 over 374 frames.
+1041_190_r tini temps fait i pas t'ai compouanne dé bon 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_190_r is -7.91052 over 374 frames.
+1041_192_l é vwala donk aktivité poch a mandé-mwen 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_192_l is -8.22345 over 288 frames.
+1041_192_r sé kanaval éfèktivman ki rich an menmditan jan 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_192_r is -8.23677 over 288 frames.
+1041_194_l évè tout fwèt an sé vou kont anfèt sa 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_194_l is -7.94591 over 447 frames.
+1041_194_r ou fwèt adan ti i té ka nou kont anfèt sa 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_194_r is -7.99782 over 447 frames.
+1041_196_l é aprézan mélon la a on ti vizit 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_196_l is -7.7856 over 412 frames.
+1041_196_r é an té piti koton-la a on ti vizit 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_196_r is -7.87381 over 412 frames.
+1041_198_l manzè aksantyé osi 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_198_l is -8.29672 over 294 frames.
+1041_198_r tèlman sètadi an té piti 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_198_r is -8.30922 over 294 frames.
+1041_200_l midi kon mwen an ka di sé sanm la ki manman mwen é donk 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_200_l is -7.6965 over 374 frames.
+1041_200_r sibi on dwèt an nou sé sanm la ki manman mwen é donk 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_200_r is -7.74599 over 374 frames.
+1041_202_l ka rivé nou ri jen pèd lakat 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_202_l is -8.27205 over 180 frames.
+1041_202_r an an pé di jen pèd lakat 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_202_r is -8.26035 over 180 frames.
+1041_204_l pati désen an mwen pou té ka pran té ka atann sa 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_204_l is -7.81014 over 604 frames.
+1041_204_r piti manman mwen pou té ka manké mwen on biten ki ka 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_204_r is -7.8549 over 604 frames.
+1041_206_l 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_206_l is -8.26129 over 80 frames.
+1041_206_r on pèp 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_206_r is -8.30303 over 80 frames.
+1041_208_l an pé pé fè adan anivèsè di 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_208_l is -7.77874 over 343 frames.
+1041_208_r san pèd fil a anivèsè ka di 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_208_r is -7.83906 over 343 frames.
+1041_20_l é fanmi an gwadloup é fanmi an mwen manman mwen fè an mwen 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_20_l is -7.7386 over 421 frames.
+1041_20_r an gwadloup fom an mwen manman mwen fè an mwen 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_20_r is -7.85602 over 421 frames.
+1041_210_l é ponmoun pa té kalipso ki ka 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_210_l is -7.82553 over 384 frames.
+1041_210_r é kon manké lot-la on biten konsa 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_210_r is -7.85664 over 384 frames.
+1041_212_l mèsi monchè konpè ou pé pa di ké 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_212_l is -7.92827 over 359 frames.
+1041_212_r mèsi monchè konpè ou pé jèm di ké 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_212_r is -7.97097 over 359 frames.
+1041_214_l wap si wap 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_214_l is -8.73732 over 135 frames.
+1041_214_r wap si wap 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_214_r is -8.568 over 135 frames.
+1041_216_l dèpi andidan fon jenn lè anlè-la 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_216_l is -7.34426 over 535 frames.
+1041_216_r andidan an jan an k’ay an pèd lakat 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_216_r is -7.38025 over 535 frames.
+1041_217_l é pran ri kra kra kra 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_217_l is -7.93972 over 440 frames.
+1041_217_r tèt an nou ka pran labitid manni travay laj a-y 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_217_r is -7.99669 over 440 frames.
+1041_218_l an pa sav tout moun 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_218_l is -7.63546 over 178 frames.
+1041_218_r an pa sav fè kon 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_218_r is -7.78487 over 178 frames.
+1041_220_l an ké dépann si médikaman èvè lakontantman 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_220_l is -7.81841 over 530 frames.
+1041_220_r ki rann nou kont ké nou dèyè lenj konkonsa médikaman èvè lakontantman 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_220_r is -7.90213 over 530 frames.
+1041_222_l kon té ka pengné yo ka éséyé rès- 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_222_l is -7.43548 over 494 frames.
+1041_222_r kon an té kay kon yè la sé sèl fos 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_222_r is -7.51386 over 494 frames.
+1041_224_l san jen pèd lakat manman mwen an té douvan koujèt sé té trapé la 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_224_l is -7.73555 over 535 frames.
+1041_224_r an gèl a poulèt ou pa ni manman mwen an té douvan a-ou pa jen sé tit a pap’an 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_224_r is -7.7991 over 535 frames.
+1041_226_l fois c'est con an éfèvèsans an manjé sa 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_226_l is -7.919 over 424 frames.
+1041_226_r touné vè tout ot fom an éfèvèsans sonjé lè 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_226_r is -8.01982 over 424 frames.
+1041_228_l ni on kwi farin patat é pwa 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_228_l is -8.22452 over 225 frames.
+1041_228_r anlo ziyanm patat é pwa 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_228_r is -8.31779 over 225 frames.
+1041_22_l pou nou 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_22_l is -6.58947 over 100 frames.
+1041_22_r 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_22_r is -6.66438 over 100 frames.
+1041_230_l manman mwen té tini 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_230_l is -7.65263 over 279 frames.
+1041_230_r mwen mwenmenm an mwen yo di 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_230_r is -7.7667 over 279 frames.
+1041_232_l an toujou ka paré yo avan nou palé kréol 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_232_l is -7.83094 over 572 frames.
+1041_232_r an toujou ka paré douvan an tan ou té ka kwè toujou 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_232_r is -7.82932 over 572 frames.
+1041_234_l ké sanm san sanm 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_234_l is -8.29515 over 173 frames.
+1041_234_r ki soti an vant a lalit 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_234_r is -8.35599 over 173 frames.
+1041_236_l très langaj tout swa an ké dépann si tourist 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_236_l is -7.45203 over 720 frames.
+1041_236_r très langaj toutwèl itilizé tanbou difé 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_236_r is -7.44672 over 720 frames.
+1041_238_l san jen 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_238_l is -8.52712 over 226 frames.
+1041_238_r san jen 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_238_r is -8.61838 over 226 frames.
+1041_240_l é labitid a-y lantman lantman 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_240_l is -7.81568 over 263 frames.
+1041_240_r tou séla ki dimanch é lantèman la sa 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_240_r is -7.89689 over 263 frames.
+1041_242_l an sé nèg an-mwen an toujou 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_242_l is -8.26038 over 146 frames.
+1041_242_r an sé nèg an-mwen an toujou é 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_242_r is -8.2949 over 146 frames.
+1041_244_l pou fè nou vansé 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_244_l is -8.43956 over 246 frames.
+1041_244_r é poulèt ka fouyé 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_244_r is -8.49711 over 246 frames.
+1041_246_l lendi 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_246_l is -7.75772 over 138 frames.
+1041_246_r donk bokit di 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_246_r is -7.77015 over 138 frames.
+1041_248_l senbioz èvè tout adan enprovizé 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_248_l is -8.08541 over 363 frames.
+1041_248_r senbioz èvè tout adan enprovizé 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_248_r is -8.16206 over 363 frames.
+1041_24_l an mwen pou té ni toujis senkant 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_24_l is -8.27412 over 227 frames.
+1041_24_r ten é dot anko jis 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_24_r is -8.33894 over 227 frames.
+1041_250_l mé lè ou pé 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_250_l is -8.00165 over 197 frames.
+1041_250_r on lè i té 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_250_r is -8.01746 over 197 frames.
+1041_252_l bon 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_252_l is -6.3472 over 122 frames.
+1041_252_r bon 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_252_r is -6.27048 over 122 frames.
+1041_254_l moderne à la maison fanm solid lasa té ka la la 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_254_l is -8.38113 over 492 frames.
+1041_254_r adan lézot fanm solid lasa té ka la ka 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_254_r is -8.45122 over 492 frames.
+1041_255_l mèsi monchè konpè rakoun té ka jen rivé jis owa zanmi konwa 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_255_l is -7.77722 over 781 frames.
+1041_255_r mèsi monchè konpè rakoun té ka fè janmayik ayiti sendomeng mwa aprè dantis an mwen 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_255_r is -7.82555 over 781 frames.
+1041_257_l té manjé manman poul yo wa ka tan avan sé té menmjan ki komè- fanmi lafan 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_257_l is -8.09729 over 450 frames.
+1041_257_r ki jan an ka plis ou mwen ka paré langoust nou pa té komin tibou an pé atann 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_257_r is -8.12786 over 450 frames.
+1041_259_l a dwèt an nou épi kon lanbéli 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_259_l is -8.02714 over 406 frames.
+1041_259_r a dwèt an nou épi kon lanbéli 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_259_r is -8.08428 over 406 frames.
+1041_261_l dé zan 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_261_l is -8.32383 over 55 frames.
+1041_261_r konprann 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_261_r is -8.44975 over 55 frames.
+1041_263_l an tan pou vann ba moun ka pou soutyenn vant an kontribann 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_263_l is -8.2043 over 442 frames.
+1041_263_r rantré an kaz an kaz an kaz pou soutyenn vant an kontribann 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_263_r is -8.16148 over 442 frames.
+1041_265_l an tan i di krikett kon fwèt an mitan lèstonmak a’y sé té an biten 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_265_l is -7.70634 over 503 frames.
+1041_265_r é pran ri kra kra kra fwèt lenstan la sa paské laprizon 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_265_r is -7.75167 over 503 frames.
+1041_267_l ka plis ou mwen 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_267_l is -7.86292 over 100 frames.
+1041_267_r ka plis ou mwen 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_267_r is -7.86701 over 100 frames.
+1041_269_l on on anlo blan 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_269_l is -7.82652 over 196 frames.
+1041_269_r é nonm an anvlop mè 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_269_r is -7.78371 over 196 frames.
+1041_26_l manman mwen é vwè lendi 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_26_l is -7.28266 over 459 frames.
+1041_26_r manman mwen é vwè on 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_26_r is -7.40521 over 459 frames.
+1041_271_l pi piti a piti popilasyon 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_271_l is -7.90243 over 455 frames.
+1041_271_r ki jan nou ka pati demen maten 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_271_r is -7.99205 over 455 frames.
+1041_273_l fini poutan a lenbé an nou 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_273_l is -8.32465 over 259 frames.
+1041_273_r fini poutan a lenbé an nou 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_273_r is -8.38962 over 259 frames.
+1041_275_l té ka jen 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_275_l is -7.85305 over 175 frames.
+1041_275_r san jen 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_275_r is -7.78052 over 175 frames.
+1041_277_l résaman té ni tou sa ki pa kon mwen an ni 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_277_l is -7.97756 over 402 frames.
+1041_277_r yenki sa fanm té ni tou sa ki pa kon mwen an ni 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_277_r is -8.06912 over 402 frames.
+1041_279_l an prèmyé 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_279_l is -8.47941 over 174 frames.
+1041_279_r an prèmyé puisans 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_279_r is -8.48164 over 174 frames.
+1041_281_l hum lè mèt chanjé jé kwa 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_281_l is -8.08841 over 299 frames.
+1041_281_r hum lè mèt chanjé ka la 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_281_r is -8.08392 over 299 frames.
+1041_283_l é pitit a’y tété responsab la 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_283_l is -7.89097 over 351 frames.
+1041_283_r é pitit a’y tété responsab la 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_283_r is -7.89594 over 351 frames.
+1041_285_l tit a pap’an mwen jodla papa-y 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_285_l is -7.90418 over 195 frames.
+1041_285_r la pa kon mwen jodla papa-y 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_285_r is -7.92659 over 195 frames.
+1041_287_l kon kok-genm an pit 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_287_l is -7.74944 over 240 frames.
+1041_287_r kon kok-genm an pit 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_287_r is -7.6786 over 240 frames.
+1041_289_l tout zévan ka jou siren 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_289_l is -7.64173 over 306 frames.
+1041_289_r aloss kifè on jou siren 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_289_r is -7.70582 over 306 frames.
+1041_28_l sé timoun a kimoun on kèsyon-lasa té ka 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_28_l is -8.09251 over 306 frames.
+1041_28_r sé timoun a kimoun on kèsyon-lasa té ka 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_28_r is -8.21127 over 306 frames.
+1041_291_l an men a siriyen-la des pays 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_291_l is -7.87649 over 149 frames.
+1041_291_r an ni vréman des pays 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_291_r is -7.93758 over 149 frames.
+1041_293_l é 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_293_l is -6.50513 over 93 frames.
+1041_293_r é 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_293_r is -6.60272 over 93 frames.
+1041_295_l ka di la ka pèd tibwen adan anivèsè a an difisil 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_295_l is -7.368 over 824 frames.
+1041_295_r ka di la ka bat an kaz é chanté kantik èvè lakontantman difisil 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_295_r is -7.41448 over 824 frames.
+1041_297_l an pa ni 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_297_l is -7.62303 over 86 frames.
+1041_297_r an pa ni 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_297_r is -7.73978 over 86 frames.
+1041_299_l an ké vwè isidan pa ni di plis si sa 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_299_l is -7.81994 over 311 frames.
+1041_299_r an ké vwè isidan pa ni dé pa ni zanno 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_299_r is -7.87487 over 311 frames.
+1041_2_l a tout sa alè la pistache canne et tous 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_2_l is -8.02927 over 284 frames.
+1041_2_r a tout sa alè la pistache canne et tous 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_2_r is -8.08443 over 284 frames.
+1041_301_l ponmoun pa té ké é fenfon lakanpay té sa 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_301_l is -7.19072 over 921 frames.
+1041_301_r ponmoun pa té ké é fenfon lakanpay té sa 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_301_r is -7.22487 over 921 frames.
+1041_303_l é finalman 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_303_l is -7.71539 over 107 frames.
+1041_303_r é finalman 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_303_r is -7.80589 over 107 frames.
+1041_305_l ka pansé ké é 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_305_l is -7.504 over 102 frames.
+1041_305_r ka pansé ké 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_305_r is -7.56945 over 102 frames.
+1041_307_l é pitit a pitit a’y ki té ka chanté ban 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_307_l is -7.43183 over 613 frames.
+1041_307_r é pitit a pitit a’y ki té ka chanté ban 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_307_r is -7.42415 over 613 frames.
+1041_308_l té ka tété pann menm lè 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_308_l is -7.18192 over 483 frames.
+1041_308_r ké dépann si idantité an mwen 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_308_r is -7.20854 over 483 frames.
+1041_30_l imaj an vant a’y é i mandé krikett 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_30_l is -7.7754 over 349 frames.
+1041_30_r konpè an jan an ka pansé dirèktéman 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_30_r is -7.90399 over 349 frames.
+1041_310_l an ka sonjé kè jodla fo pa ni two gran ni dé 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_310_l is -7.49672 over 497 frames.
+1041_310_r an ka sonjé kè jodla fo pa ni two gran ni dé zan 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_310_r is -7.4995 over 497 frames.
+1041_312_l san manti ki vou ki pa sav ola an k’ay viv 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_312_l is -7.45018 over 355 frames.
+1041_312_r é labitid a-y asi lakanpay 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_312_r is -7.37743 over 355 frames.
+1041_314_l anmèm tan ou té mizik an pisin la 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_314_l is -7.3267 over 317 frames.
+1041_314_r pran on poban ki té dizan an pisin la 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_314_r is -7.40981 over 317 frames.
+1041_316_l é pati 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_316_l is -7.24521 over 105 frames.
+1041_316_r é pati 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_316_r is -7.2632 over 105 frames.
+1041_318_l éfektiman pousa an fenfon a kè a maléré 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_318_l is -7.24735 over 665 frames.
+1041_318_r éfektiman on fasèt soupen a’y san sanm 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_318_r is -7.29202 over 665 frames.
+1041_320_l an pou trent minit 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_320_l is -7.58326 over 143 frames.
+1041_320_r an pou trent minit 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_320_r is -7.58381 over 143 frames.
+1041_322_l an ka pansé 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_322_l is -8.48024 over 70 frames.
+1041_322_r an tan ansyen 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_322_r is -8.42375 over 70 frames.
+1041_324_l tout an frans fason lè gran konvwa a konmès é 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_324_l is -7.33129 over 635 frames.
+1041_324_r mounfanm ni fom fason lè gran konvwa a konmès é 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_324_r is -7.38079 over 635 frames.
+1041_326_l san jen 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_326_l is -7.64975 over 66 frames.
+1041_326_r san jen 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_326_r is -7.67893 over 66 frames.
+1041_328_l papa mwen manjé tèm ansyen 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_328_l is -8.17924 over 167 frames.
+1041_328_r ka sanm men nou ansanm 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_328_r is -8.15969 over 167 frames.
+1041_32_l manzè foumi pa ped tan 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_32_l is -8.16601 over 162 frames.
+1041_32_r manzè foumi pa ped tan 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_32_r is -8.26445 over 162 frames.
+1041_330_l ki ka fèt é tou sa tout ça fait i pas de tout ça maison kat senk sa paské 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_330_l is -8.28908 over 529 frames.
+1041_330_r té ka fè ké tou sa tout ça fait i pas de tout ça maison kat senk sa paské 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_330_r is -8.31526 over 529 frames.
+1041_331_l pou fè bèk e pou sa an fè an pa sav an ka poté’y jous an mwen an té piti 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_331_l is -7.9525 over 606 frames.
+1041_331_r an po a tout sa ansèt an pa sav an ka poté’y jous an mwen an té piti 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_331_r is -7.95807 over 606 frames.
+1041_333_l tout moun a gran manman poul blan a yo tèlman 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_333_l is -8.08908 over 222 frames.
+1041_333_r timoun la bon avan pou yo tèlman 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_333_r is -8.10376 over 222 frames.
+1041_335_l paralèlman èvè sa an pa chwazi délenkan la 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_335_l is -7.86568 over 509 frames.
+1041_335_r sa ka pansé canal ça t'ai compouanne on ti macaque la 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_335_r is -7.84476 over 509 frames.
+1041_336_l péyi an nou 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_336_l is -7.41322 over 204 frames.
+1041_336_r finalman yo 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_336_r is -7.44759 over 204 frames.
+1041_338_l an komin- la limenm travay an granmoun 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_338_l is -8.06639 over 216 frames.
+1041_338_r an po lè mwen sé fab-la ka ban nou 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_338_r is -8.0615 over 216 frames.
+1041_340_l i té ni rivé manzè foumi sé té on biten la 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_340_l is -7.7186 over 433 frames.
+1041_340_r ki té ni p’on dimanch lavan sé té sèl biten la 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_340_r is -7.80585 over 433 frames.
+1041_342_l lison si sa i té ka kriyé 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_342_l is -7.11909 over 795 frames.
+1041_342_r difisil sé ti i té ka kriyé 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_342_r is -7.12734 over 795 frames.
+1041_344_l san manti lwen an pé 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_344_l is -8.53748 over 129 frames.
+1041_344_r sa ka fè non timafi 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_344_r is -8.49996 over 129 frames.
+1041_346_l sé on on ti milflè ki las pétèt jwé an mwen ès an ka sonjé an ka di 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_346_l is -7.71816 over 592 frames.
+1041_346_r sounon jennjan té ba pitit a’y tété jwé an mwen ès an ka sonjé an ka di 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_346_r is -7.69173 over 592 frames.
+1041_347_l ou di mwen ké ou prévwa si politik a lézot mi gran manman nou pa foséman 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_347_l is -7.65163 over 700 frames.
+1041_347_r i té tifi té pèsé wap si politik a lézot mi gran manman nou pa foséman 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_347_r is -7.63853 over 700 frames.
+1041_348_l né a-y ka i ka fè lanvironman 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_348_l is -6.95847 over 1001 frames.
+1041_348_r méné an kado fifi t'ai qu'a fait l'anmou menm lè 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_348_r is -6.99872 over 1001 frames.
+1041_349_l é 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_349_l is -6.72948 over 219 frames.
+1041_349_r é 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_349_r is -6.77998 over 219 frames.
+1041_34_l mizérab men osi dé misyé ki té ka on 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_34_l is -8.01679 over 415 frames.
+1041_34_r bannzil-la é an afrik mwen osi c'était pas de toute façon 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_34_r is -8.04076 over 415 frames.
+1041_350_l hum ou ka chanté 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_350_l is -6.97671 over 783 frames.
+1041_350_r hum an ké 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_350_r is -6.92614 over 783 frames.
+1041_352_l an frans 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_352_l is -8.09075 over 112 frames.
+1041_352_r an anfèt sa 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_352_r is -8.03289 over 112 frames.
+1041_354_l adan mové zèb kon zépon on ka dévenn 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_354_l is -7.50455 over 286 frames.
+1041_354_r an tan ou té ka pran on favè grenn 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_354_r is -7.44511 over 286 frames.
+1041_356_l an tan avan sé té 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_356_l is -6.88868 over 833 frames.
+1041_356_r an tan avan sé té on 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_356_r is -6.89312 over 833 frames.
+1041_357_l an tou nwè-la ki té mété 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_357_l is -6.96498 over 908 frames.
+1041_357_r an an tou nwè-la ki té mété 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_357_r is -6.94298 over 908 frames.
+1041_358_l ka mwenmenm an mwen an paré an manman mwen tout moun 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_358_l is -7.50307 over 488 frames.
+1041_358_r ka mwenmenm an mwen an paré an manman mwen dot moun 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_358_r is -7.45174 over 488 frames.
+1041_360_l an tan mékrédi nomalman sa 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_360_l is -7.76903 over 327 frames.
+1041_360_r an tan mékrédi nomalman 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_360_r is -7.6838 over 327 frames.
+1041_362_l é 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_362_l is -6.60839 over 103 frames.
+1041_362_r é 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_362_r is -6.57285 over 103 frames.
+1041_364_l pou nou nou toujou i té vlé achté tout sos 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_364_l is -7.94742 over 383 frames.
+1041_364_r pou nou nou toujou ki pa té vlé achté tout sos 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_364_r is -7.98089 over 383 frames.
+1041_366_l ka kriyé farin 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_366_l is -8.35526 over 126 frames.
+1041_366_r pati trankil 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_366_r is -8.22841 over 126 frames.
+1041_368_l kok é poulèt ka fouyé tou an tè tout moun konkonsa 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_368_l is -8.49696 over 349 frames.
+1041_368_r kok é poulèt ka fouyé tou an tè tout moun kanklo konsa 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_368_r is -8.48404 over 349 frames.
+1041_36_l té ka fè 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_36_l is -8.7401 over 172 frames.
+1041_36_r ka fè 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_36_r is -8.89106 over 172 frames.
+1041_370_l nou pa ka sanm on jé on senten 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_370_l is -7.36498 over 373 frames.
+1041_370_r yonn adan nou ki té réponn san fè 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_370_r is -7.40517 over 373 frames.
+1041_371_l bat é bat an kaz é chanté kantik èvè lakontantman pwenti 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_371_l is -7.88979 over 421 frames.
+1041_371_r bat é bat an plas an kiltirèl sé dabo pou yonn adan nou ki 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_371_r is -7.8971 over 421 frames.
+1041_372_l an ké pwan pouki 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_372_l is -7.43191 over 348 frames.
+1041_372_r enki pou an produi ki 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_372_r is -7.44618 over 348 frames.
+1041_374_l a lè yo fosé chwazi donk é 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_374_l is -8.06767 over 250 frames.
+1041_374_r a lè yo fosé pwent i té 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_374_r is -8.00175 over 250 frames.
+1041_376_l é nou toujou bizwen sa nou bizwen sa 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_376_l is -7.69961 over 481 frames.
+1041_376_r an ka pansé ké nou toujou bizwen sa nou bizwen sa 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_376_r is -7.678 over 481 frames.
+1041_378_l pou yo pé pa tèlman 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_378_l is -8.35178 over 126 frames.
+1041_378_r pou yo pé pa tèlman 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_378_r is -8.38789 over 126 frames.
+1041_380_l an konkonsa san tèt an nou soufwans 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_380_l is -8.13657 over 332 frames.
+1041_380_r sa ka fè an nou ka pwan ponch 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_380_r is -8.08339 over 332 frames.
+1041_382_l té ka anonsé 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_382_l is -7.35412 over 201 frames.
+1041_382_r té ka anonsé 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_382_r is -7.2443 over 201 frames.
+1041_384_l hum an fenfon a kè an-mwen 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_384_l is -8.16635 over 141 frames.
+1041_384_r hum an fenfon a kè an-mwen 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_384_r is -8.1522 over 141 frames.
+1041_386_l é é 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_386_l is -6.69026 over 289 frames.
+1041_386_r ki 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_386_r is -6.6462 over 289 frames.
+1041_387_l ki sé té on ti moman é 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_387_l is -6.94481 over 688 frames.
+1041_387_r ki sé té on fèt ki moman é 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_387_r is -6.90824 over 688 frames.
+1041_388_l té ni fey té ni timoun mè pa ni é 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_388_l is -7.2137 over 739 frames.
+1041_388_r é nou ni é ritm ni timoun mè kantil 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_388_r is -7.15117 over 739 frames.
+1041_389_l poté plent é pisimyé on ti sos a kolombo 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_389_l is -7.59854 over 465 frames.
+1041_389_r poté plent ni pisimyé on ti sos a kolombo 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_389_r is -7.62117 over 465 frames.
+1041_38_l 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_38_l is -8.51883 over 20 frames.
+1041_38_r 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_38_r is -8.63561 over 20 frames.
+1041_391_l tout kouzen tout sot 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_391_l is -8.04069 over 250 frames.
+1041_391_r tout politik tout sot 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_391_r is -8.01524 over 250 frames.
+1041_393_l ou fwèt adan ti case en 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_393_l is -7.97056 over 180 frames.
+1041_393_r konvwa-la té réglé an kadans a 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_393_r is -7.90462 over 180 frames.
+1041_395_l finalman karibéyenn-la fo an lévé désandan a zendyen lend té ka manjé adan ta-ou 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_395_l is -8.03376 over 566 frames.
+1041_395_r finalman produi anlo mounfanm ni dizuitan té mèt atè dé tifi a’y monté an ka pansé 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_395_r is -8.03496 over 566 frames.
+1041_396_l ponmoun pa té kaskod manjé manman poul blan mè nou ka fè sa pou pasé kaz an mwen 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_396_l is -7.75563 over 669 frames.
+1041_396_r ponmoun pa té kaskod manjé manman poul blan mè nou ka fè sa pou pasé kaz an mwen 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_396_r is -7.76347 over 669 frames.
+1041_397_l dé é 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_397_l is -7.06257 over 217 frames.
+1041_397_r dé é 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_397_r is -6.97945 over 217 frames.
+1041_399_l é piti piti papa-y 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_399_l is -8.08185 over 195 frames.
+1041_399_r an té piti papa-y 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_399_r is -8.05505 over 195 frames.
+1041_401_l finalman adan mové zèb kon antann sa i té ka rété on gran tan a’y é i té kaskod lafrans réyisi avansé aprézan la 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_401_l is -7.83958 over 1065 frames.
+1041_401_r finalman anparfèt dévlopman a fanmi a’y i té ka pran ri kra kra kra lanné i té kaskod lafrans an po sav antiyèz té qu'a poter figue 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_401_r is -7.85674 over 1065 frames.
+1041_402_l pou nou sanm on sèy an zenk an kaz a 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_402_l is -7.3418 over 673 frames.
+1041_402_r pou nou sanm on fasèt entérésan 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_402_r is -7.2765 over 673 frames.
+1041_403_l adan on sèl fos 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_403_l is -7.38923 over 353 frames.
+1041_403_r adan on sèy 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_403_r is -7.35625 over 353 frames.
+1041_40_l é mwa pa sé té ka rété nanbouk li é 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_40_l is -7.92257 over 350 frames.
+1041_40_r é mwa pa sé té ka filé lang 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_40_r is -7.97511 over 350 frames.
+1041_42_l pou nou té ka manjé-y 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_42_l is -8.00969 over 276 frames.
+1041_42_r ou yé jan an té rivé 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_42_r is -8.13214 over 276 frames.
+1041_44_l pisin la 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_44_l is -7.71777 over 71 frames.
+1041_44_r pisin la 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_44_r is -7.67761 over 71 frames.
+1041_46_l mizè maladi 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_46_l is -8.30517 over 96 frames.
+1041_46_r mizè maladi 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_46_r is -8.3945 over 96 frames.
+1041_48_l 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_48_l is -8.3738 over 14 frames.
+1041_48_r mè 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_48_r is -8.51914 over 14 frames.
+1041_4_l wè 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_4_l is -8.28849 over 50 frames.
+1041_4_r wè 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_4_r is -8.31183 over 50 frames.
+1041_50_l krikett té an tout chivé nwè an té piti papa-y 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_50_l is -8.23939 over 285 frames.
+1041_50_r krikett té an tan i di mwen poté tit-lasa 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_50_r is -8.30192 over 285 frames.
+1041_52_l té ka dépann dè rèlasyon tradisyon tu vois mè é bat kon kè kann wi 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_52_l is -7.85175 over 690 frames.
+1041_52_r té ka dépann dè rèlasyon tradisyon konsidiré an té ka konsèvé adan on kwi 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_52_r is -7.91222 over 690 frames.
+1041_54_l é papa-y on milat ki té ka é 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_54_l is -8.30346 over 242 frames.
+1041_54_r té piti papa-y on milat ki té ka é 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_54_r is -8.44817 over 242 frames.
+1041_56_l donk nou té ka mo pa lafen 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_56_l is -8.44985 over 284 frames.
+1041_56_r pwès yotout té ka mo pa lafen 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_56_r is -8.53178 over 284 frames.
+1041_58_l tanbou 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_58_l is -8.26563 over 34 frames.
+1041_58_r 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_58_r is -8.1879 over 34 frames.
+1041_60_l finalman ba manman-y papa-y on gran manman mwen té ka paré an ka pansé 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_60_l is -8.08529 over 746 frames.
+1041_60_r finalman ba manman-y papa-y on gran manman mwen ké ou pa ka paré an ka pansé 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_60_r is -8.14957 over 746 frames.
+1041_61_l ou ka vwè an ka pansé ké i té ka 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_61_l is -7.6594 over 346 frames.
+1041_61_r an kaz an mwen ka dansé-y ki 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_61_r is -7.68111 over 346 frames.
+1041_63_l sé pik la 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_63_l is -8.20686 over 139 frames.
+1041_63_r sé pik la 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_63_r is -8.23132 over 139 frames.
+1041_65_l idé mè 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_65_l is -7.89419 over 71 frames.
+1041_65_r idé mè 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_65_r is -7.96289 over 71 frames.
+1041_67_l an an pé atann 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_67_l is -8.10375 over 94 frames.
+1041_67_r an ka pansé 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_67_r is -8.36677 over 94 frames.
+1041_69_l pétèt réyisi mè an ka di 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_69_l is -7.99277 over 271 frames.
+1041_69_r pétèt réyisi mè pa ka di 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_69_r is -8.10143 over 271 frames.
+1041_6_l foséyè 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_6_l is -8.355 over 100 frames.
+1041_6_r foséyè 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_6_r is -8.36174 over 100 frames.
+1041_71_l an vant fou nèg lapenti nwè fè sa pou sa an ka konpwann pouki 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_71_l is -8.08355 over 498 frames.
+1041_71_r on on tifi té ka pran nwè fè sa eské sa ka konpwann pouki 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_71_r is -8.18677 over 498 frames.
+1041_73_l an frans 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_73_l is -8.43684 over 52 frames.
+1041_73_r an frans 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_73_r is -8.485 over 52 frames.
+1041_75_l é zafè a midi pa té ké lot 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_75_l is -8.04813 over 146 frames.
+1041_75_r é zafè a midi pa té ké lot 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_75_r is -8.07008 over 146 frames.
+1041_77_l dou manman ka gwossi té ka chakfwa sé mwen la 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_77_l is -8.21187 over 473 frames.
+1041_77_r dou manman ka gwossi té ka chanté fois é vwala 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_77_r is -8.26652 over 473 frames.
+1041_78_l an pa ka di bon sé konsa 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_78_l is -8.17258 over 190 frames.
+1041_78_r an pa ka di bon sé konsa 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_78_r is -8.28938 over 190 frames.
+1041_80_l twa pwent i té la ka bat 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_80_l is -8.47507 over 288 frames.
+1041_80_r konpwann pouki i té la la ka dansé 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_80_r is -8.54545 over 288 frames.
+1041_82_l é sé an sé pitit a nèg a konkonsa san 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_82_l is -8.21328 over 383 frames.
+1041_82_r ké sé an ka pansé dirèktéman an pé atann sa ka atann 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_82_r is -8.25269 over 383 frames.
+1041_84_l é 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_84_l is -9.00085 over 10 frames.
+1041_84_r é 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_84_r is -8.84348 over 10 frames.
+1041_86_l griyé 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_86_l is -7.45531 over 67 frames.
+1041_86_r rivé 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_86_r is -7.44831 over 67 frames.
+1041_88_l ka fèt nomalman sa vini on jan 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_88_l is -8.48542 over 251 frames.
+1041_88_r ka fè non timafi 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_88_r is -8.63241 over 251 frames.
+1041_8_l ka pwan ponch 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_8_l is -7.76806 over 138 frames.
+1041_8_r ka pwan ponch la 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_8_r is -7.85802 over 138 frames.
+1041_90_l dévlopman é 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_90_l is -7.35364 over 142 frames.
+1041_90_r dévlopman é 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_90_r is -7.36024 over 142 frames.
+1041_92_l tout kè té ka fè diféran ka fè dé résèt èvè fifi con fifi t'ai aimer 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_92_l is -7.99556 over 568 frames.
+LOG (apply-cmvn[5.5.891~1-37628]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 430 utterances, errors on 0
+1041_92_r tout kè té ka fè diféran ka fè térèz chonjé t'ai qu'a fait fifi plaisi fifi t'ai en donk 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_92_r is -8.06294 over 568 frames.
+1041_94_l plis ou mwen 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_94_l is -8.42936 over 122 frames.
+1041_94_r 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_94_r is -8.47976 over 122 frames.
+1041_96_l tèt- ay adan lézot péyi yo ka konsèvé adan on sèy 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_96_l is -8.22203 over 421 frames.
+1041_96_r piti piti yo kay di dé zan la 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_96_r is -8.28929 over 421 frames.
+1041_98_l ni dé adan on 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_98_l is -8.31792 over 130 frames.
+1041_98_r ni dé adan on 
+LOG (gmm-latgen-faster[5.5.891~1-37628]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 1041_98_r is -8.44873 over 130 frames.
+LOG (gmm-latgen-faster[5.5.891~1-37628]:main():gmm-latgen-faster.cc:176) Time taken 1779.14s: real-time factor assuming 100 frames/sec is 1.29141
+LOG (gmm-latgen-faster[5.5.891~1-37628]:main():gmm-latgen-faster.cc:179) Done 430 utterances, failed for 0
+LOG (gmm-latgen-faster[5.5.891~1-37628]:main():gmm-latgen-faster.cc:181) Overall log-likelihood per frame is -7.77161 over 137768 frames.
+# Accounting: time=1779 threads=1
+# Ended (code 0) at Fri Mar 12 13:35:53 CET 2021, elapsed time 1779 seconds

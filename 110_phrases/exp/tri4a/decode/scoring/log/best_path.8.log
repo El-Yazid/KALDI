@@ -1,0 +1,28 @@
+# lattice-best-path --lm-scale=8 --word-symbol-table=exp/tri4a/graph/words.txt "ark:gunzip -c exp/tri4a/decode/lat.*.gz|" ark,t:exp/tri4a/decode/scoring/8.tra 
+# Started at Fri Mar 12 16:43:11 CET 2021
+#
+lattice-best-path --lm-scale=8 --word-symbol-table=exp/tri4a/graph/words.txt 'ark:gunzip -c exp/tri4a/decode/lat.*.gz|' ark,t:exp/tri4a/decode/scoring/8.tra 
+LOG (lattice-best-path[5.5.891~1-37628]:main():lattice-best-path.cc:99) For utterance 1041_100, best cost 135.292 + 5080.66 = 5215.95 over 87 frames.
+1041_100 samdi ou 
+LOG (lattice-best-path[5.5.891~1-37628]:main():lattice-best-path.cc:99) For utterance 1041_106, best cost 250.497 + 8732.88 = 8983.38 over 142 frames.
+1041_106 ou ka ou ka ka 
+LOG (lattice-best-path[5.5.891~1-37628]:main():lattice-best-path.cc:99) For utterance 1041_108, best cost 518.264 + 23044.4 = 23562.7 over 382 frames.
+1041_108 ka tann an i té ka menm ki pa ka di 
+LOG (lattice-best-path[5.5.891~1-37628]:main():lattice-best-path.cc:99) For utterance 1041_42, best cost 275.866 + 16557.3 = 16833.2 over 276 frames.
+1041_42 ni matyè oubliyé sa 
+LOG (lattice-best-path[5.5.891~1-37628]:main():lattice-best-path.cc:99) For utterance 1041_50, best cost 339.235 + 17358.7 = 17697.9 over 285 frames.
+1041_50 tèm patikilyé vwè ou pa ay 
+LOG (lattice-best-path[5.5.891~1-37628]:main():lattice-best-path.cc:99) For utterance 1041_56, best cost 444.651 + 18048.9 = 18493.6 over 284 frames.
+1041_56 ou ka aprann té ka pé pa ka tann 
+LOG (lattice-best-path[5.5.891~1-37628]:main():lattice-best-path.cc:99) For utterance 1041_67, best cost 135.948 + 5486.96 = 5622.9 over 94 frames.
+1041_67 ou ka tann 
+LOG (lattice-best-path[5.5.891~1-37628]:main():lattice-best-path.cc:99) For utterance 1041_71, best cost 799.63 + 29238.2 = 30037.8 over 498 frames.
+1041_71 an kontan ni tou sa an ka sa sé pou sa ka ka poukwa ou ka ki 
+LOG (lattice-best-path[5.5.891~1-37628]:main():lattice-best-path.cc:99) For utterance 1041_82, best cost 531.995 + 22590.3 = 23122.3 over 383 frames.
+1041_82 té ka dansé si ou moun la ka tou sa ka tann 
+LOG (lattice-best-path[5.5.891~1-37628]:main():lattice-best-path.cc:99) For utterance 1041_88, best cost 390.019 + 15852.9 = 16242.9 over 251 frames.
+1041_88 tou sa sé paské an senten ka 
+LOG (lattice-best-path[5.5.891~1-37628]:main():lattice-best-path.cc:124) Overall cost per frame is 61.8242 = 1.42483 [graph] + 60.3994 [acoustic] over 2682 frames.
+LOG (lattice-best-path[5.5.891~1-37628]:main():lattice-best-path.cc:128) Done 10 lattices, failed for 0
+# Accounting: time=0 threads=1
+# Ended (code 0) at Fri Mar 12 16:43:11 CET 2021, elapsed time 0 seconds

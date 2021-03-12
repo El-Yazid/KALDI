@@ -1,0 +1,10 @@
+# gunzip -c exp/tri2/decode/depth_tmp.*.gz | steps/diagnostic/analyze_lattice_depth_stats.py exp/tri2/graph exp/tri2/decode/ali_frame_tmp.gz 
+# Started at Fri Mar 12 14:31:07 CET 2021
+#
+The total amount of data analyzed assuming 100 frames per second is 0.5 hours
+Overall, lattice depth (10,50,90-percentile)=(13,73,312) and mean=143.9
+Phone SIL accounts for 89.1% of frames, with lattice depth (10,50,90-percentile)=(13,72,307) and mean=142.0
+Nonsilence phones as a group account for 10.9% of frames, with lattice depth (10,50,90-percentile)=(16,90,334) and mean=159.2
+Phone aa_E accounts for 0.6% of frames, with lattice depth (10,50,90-percentile)=(13,110,335) and mean=200.4
+# Accounting: time=0 threads=1
+# Ended (code 0) at Fri Mar 12 14:31:07 CET 2021, elapsed time 0 seconds

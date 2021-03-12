@@ -1,0 +1,20 @@
+# lattice-depth-per-frame "ark:gunzip -c exp/tri4a/decode/lat.1.gz|" "ark,t:|gzip -c > exp/tri4a/decode/depth_tmp.1.gz" ark:- | lattice-best-path --acoustic-scale=0.1 ark:- ark:/dev/null "ark,t:|gzip -c >exp/tri4a/decode/ali_tmp.1.gz" 
+# Started at Fri Mar 12 16:43:11 CET 2021
+#
+lattice-depth-per-frame 'ark:gunzip -c exp/tri4a/decode/lat.1.gz|' 'ark,t:|gzip -c > exp/tri4a/decode/depth_tmp.1.gz' ark:- 
+lattice-best-path --acoustic-scale=0.1 ark:- ark:/dev/null 'ark,t:|gzip -c >exp/tri4a/decode/ali_tmp.1.gz' 
+LOG (lattice-best-path[5.5.891~1-37628]:main():lattice-best-path.cc:99) For utterance 1041_100, best cost 16.9116 + 508.066 = 524.977 over 87 frames.
+LOG (lattice-best-path[5.5.891~1-37628]:main():lattice-best-path.cc:99) For utterance 1041_106, best cost 28.975 + 875.481 = 904.456 over 142 frames.
+LOG (lattice-best-path[5.5.891~1-37628]:main():lattice-best-path.cc:99) For utterance 1041_108, best cost 64.7831 + 2304.44 = 2369.22 over 382 frames.
+LOG (lattice-best-path[5.5.891~1-37628]:main():lattice-best-path.cc:99) For utterance 1041_42, best cost 34.4832 + 1655.73 = 1690.21 over 276 frames.
+LOG (lattice-best-path[5.5.891~1-37628]:main():lattice-best-path.cc:99) For utterance 1041_50, best cost 42.4044 + 1735.87 = 1778.28 over 285 frames.
+LOG (lattice-best-path[5.5.891~1-37628]:main():lattice-best-path.cc:99) For utterance 1041_56, best cost 51.7079 + 1808.43 = 1860.14 over 284 frames.
+LOG (lattice-best-path[5.5.891~1-37628]:main():lattice-best-path.cc:99) For utterance 1041_67, best cost 16.9935 + 548.696 = 565.689 over 94 frames.
+LOG (lattice-best-path[5.5.891~1-37628]:main():lattice-best-path.cc:99) For utterance 1041_71, best cost 88.6333 + 2933.86 = 3022.49 over 498 frames.
+LOG (lattice-best-path[5.5.891~1-37628]:main():lattice-best-path.cc:99) For utterance 1041_82, best cost 56.75 + 2266.98 = 2323.73 over 383 frames.
+LOG (lattice-depth-per-frame[5.5.891~1-37628]:main():lattice-depth-per-frame.cc:82) Done 10 lattices.
+LOG (lattice-best-path[5.5.891~1-37628]:main():lattice-best-path.cc:99) For utterance 1041_88, best cost 48.7523 + 1585.29 = 1634.04 over 251 frames.
+LOG (lattice-best-path[5.5.891~1-37628]:main():lattice-best-path.cc:124) Overall cost per frame is 6.21672 = 0.167932 [graph] + 6.04879 [acoustic] over 2682 frames.
+LOG (lattice-best-path[5.5.891~1-37628]:main():lattice-best-path.cc:128) Done 10 lattices, failed for 0
+# Accounting: time=0 threads=1
+# Ended (code 0) at Fri Mar 12 16:43:11 CET 2021, elapsed time 0 seconds

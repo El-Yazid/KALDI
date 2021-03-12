@@ -1,0 +1,110 @@
+# align-equal-compiled "ark:gunzip -c exp/mono/fsts.1.gz|" "ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split2/1/utt2spk scp:data/train/split2/1/cmvn.scp scp:data/train/split2/1/feats.scp ark:- | add-deltas  ark:- ark:- |" ark,t:- | gmm-acc-stats-ali --binary=true exp/mono/0.mdl "ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split2/1/utt2spk scp:data/train/split2/1/cmvn.scp scp:data/train/split2/1/feats.scp ark:- | add-deltas  ark:- ark:- |" ark:- exp/mono/0.1.acc 
+# Started at Fri Mar 12 13:00:31 CET 2021
+#
+align-equal-compiled 'ark:gunzip -c exp/mono/fsts.1.gz|' 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split2/1/utt2spk scp:data/train/split2/1/cmvn.scp scp:data/train/split2/1/feats.scp ark:- | add-deltas  ark:- ark:- |' ark,t:- 
+gmm-acc-stats-ali --binary=true exp/mono/0.mdl 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split2/1/utt2spk scp:data/train/split2/1/cmvn.scp scp:data/train/split2/1/feats.scp ark:- | add-deltas  ark:- ark:- |' ark:- exp/mono/0.1.acc 
+apply-cmvn --utt2spk=ark:data/train/split2/1/utt2spk scp:data/train/split2/1/cmvn.scp scp:data/train/split2/1/feats.scp ark:- 
+apply-cmvn --utt2spk=ark:data/train/split2/1/utt2spk scp:data/train/split2/1/cmvn.scp scp:data/train/split2/1/feats.scp ark:- 
+add-deltas ark:- ark:- 
+add-deltas ark:- ark:- 
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:934) No self-loops on chosen path; cannot match length.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1016_locuteur1_163_r
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 50 utterances; for utterance 1016_locuteur1_140_r avg. like is -99.9686 over 201 frames.
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:934) No self-loops on chosen path; cannot match length.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1016_locuteur1_175_l
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:934) No self-loops on chosen path; cannot match length.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1016_locuteur1_189_r
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:934) No self-loops on chosen path; cannot match length.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1016_locuteur1_239_l
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:934) No self-loops on chosen path; cannot match length.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1016_locuteur1_31_l
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:934) No self-loops on chosen path; cannot match length.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1016_locuteur1_31_r
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:934) No self-loops on chosen path; cannot match length.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1016_locuteur1_54_r
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:934) No self-loops on chosen path; cannot match length.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1016_locuteur2_147_l
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:934) No self-loops on chosen path; cannot match length.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1016_locuteur2_153_r
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:934) No self-loops on chosen path; cannot match length.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1016_locuteur2_171_r
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:934) No self-loops on chosen path; cannot match length.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1016_locuteur2_184_l
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:934) No self-loops on chosen path; cannot match length.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1016_locuteur2_186_r
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:934) No self-loops on chosen path; cannot match length.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1016_locuteur2_206_l
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:934) No self-loops on chosen path; cannot match length.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1016_locuteur2_222_l
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:934) No self-loops on chosen path; cannot match length.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1016_locuteur2_222_r
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:934) No self-loops on chosen path; cannot match length.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1016_locuteur2_228_l
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:934) No self-loops on chosen path; cannot match length.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1016_locuteur2_266_r
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:934) No self-loops on chosen path; cannot match length.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1023_137_r
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:934) No self-loops on chosen path; cannot match length.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1023_56_l
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:934) No self-loops on chosen path; cannot match length.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1024_183_l
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:934) No self-loops on chosen path; cannot match length.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1024_183_r
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 58,58,41,45,45,39,50,47,45,54
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 26 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1024_185_l
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 56,53,47,44,42,42,48,43,43,37
+WARNING (align-equal-compiled[5.5.891~1-37628]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 26 to align.
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence 1024_185_r
+LOG (apply-cmvn[5.5.891~1-37628]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 1144 utterances, errors on 0
+WARNING (align-equal-compiled[5.5.891~1-37628]:main():align-equal-compiled.cc:109) Computed 1121 alignments; 0 lacked features, 23 had other errors.
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1016_locuteur1_163_r
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1016_locuteur1_175_l
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 100 utterances; for utterance 1016_locuteur1_184_r avg. like is -100.273 over 405 frames.
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1016_locuteur1_189_r
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 150 utterances; for utterance 1016_locuteur1_231_l avg. like is -97.0852 over 48 frames.
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1016_locuteur1_239_l
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 200 utterances; for utterance 1016_locuteur1_273_r avg. like is -108.407 over 242 frames.
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 250 utterances; for utterance 1016_locuteur1_318_r avg. like is -96.5912 over 95 frames.
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1016_locuteur1_31_l
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1016_locuteur1_31_r
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1016_locuteur1_54_r
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 300 utterances; for utterance 1016_locuteur1_76_l avg. like is -95.2528 over 82 frames.
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 350 utterances; for utterance 1016_locuteur2_114_l avg. like is -106.379 over 143 frames.
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1016_locuteur2_147_l
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1016_locuteur2_153_r
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 400 utterances; for utterance 1016_locuteur2_167_l avg. like is -111.782 over 214 frames.
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1016_locuteur2_171_r
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1016_locuteur2_184_l
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1016_locuteur2_186_r
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1016_locuteur2_206_l
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 450 utterances; for utterance 1016_locuteur2_220_l avg. like is -119.154 over 87 frames.
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1016_locuteur2_222_l
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1016_locuteur2_222_r
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1016_locuteur2_228_l
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1016_locuteur2_266_r
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 500 utterances; for utterance 1016_locuteur2_35_l avg. like is -115.51 over 193 frames.
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 550 utterances; for utterance 1016_locuteur2_85_l avg. like is -98.8332 over 162 frames.
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 600 utterances; for utterance 1022_3_l avg. like is -111.365 over 165 frames.
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 650 utterances; for utterance 1022_83_l avg. like is -105.285 over 61 frames.
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 700 utterances; for utterance 1023_129_l avg. like is -109.303 over 125 frames.
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1023_137_r
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 750 utterances; for utterance 1023_170_r avg. like is -116.456 over 201 frames.
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 800 utterances; for utterance 1023_214_r avg. like is -107.926 over 142 frames.
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 850 utterances; for utterance 1023_28_r avg. like is -112.71 over 79 frames.
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1023_56_l
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 900 utterances; for utterance 1023_70_l avg. like is -113.253 over 364 frames.
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 950 utterances; for utterance 1024_114_l avg. like is -116.955 over 91 frames.
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 1000 utterances; for utterance 1024_15_l avg. like is -110.056 over 243 frames.
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1024_183_l
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1024_183_r
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1024_185_l
+WARNING (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1024_185_r
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 1050 utterances; for utterance 1024_38_l avg. like is -114.172 over 199 frames.
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:105) Processed 1100 utterances; for utterance 1024_81_l avg. like is -118.402 over 53 frames.
+LOG (apply-cmvn[5.5.891~1-37628]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 1144 utterances, errors on 0
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:112) Done 1121 files, 23 with errors.
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:115) Overall avg like per frame (Gaussian only) = -105.556 over 243559 frames.
+LOG (gmm-acc-stats-ali[5.5.891~1-37628]:main():gmm-acc-stats-ali.cc:123) Written accs.
+# Accounting: time=0 threads=1
+# Ended (code 0) at Fri Mar 12 13:00:31 CET 2021, elapsed time 0 seconds

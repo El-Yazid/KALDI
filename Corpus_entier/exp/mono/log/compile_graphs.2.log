@@ -1,0 +1,29 @@
+# compile-train-graphs --read-disambig-syms=data/lang/phones/disambig.int exp/mono/tree exp/mono/0.mdl data/lang/L.fst "ark:sym2int.pl --map-oov 8 -f 2- data/lang/words.txt < data/train/split2/2/text|" "ark:|gzip -c >exp/mono/fsts.2.gz" 
+# Started at Fri Mar 12 13:00:28 CET 2021
+#
+compile-train-graphs --read-disambig-syms=data/lang/phones/disambig.int exp/mono/tree exp/mono/0.mdl data/lang/L.fst 'ark:sym2int.pl --map-oov 8 -f 2- data/lang/words.txt < data/train/split2/2/text|' 'ark:|gzip -c >exp/mono/fsts.2.gz' 
+sym2int.pl: replacing alò with 8
+sym2int.pl: replacing alò with 8
+sym2int.pl: replacing jòdijou with 8
+sym2int.pl: replacing jòdijou with 8
+sym2int.pl: replacing andéwò with 8
+sym2int.pl: replacing andéwò with 8
+sym2int.pl: replacing enpòtan with 8
+sym2int.pl: replacing enpòtan with 8
+sym2int.pl: replacing andi with 8
+sym2int.pl: replacing andi with 8
+sym2int.pl: replacing kòman with 8
+sym2int.pl: replacing kòman with 8
+sym2int.pl: replacing enpòté with 8
+sym2int.pl: replacing enpòté with 8
+sym2int.pl: replacing transfòmé with 8
+sym2int.pl: replacing transfòmé with 8
+sym2int.pl: replacing fòséman with 8
+sym2int.pl: replacing fòséman with 8
+sym2int.pl: replacing alò with 8
+sym2int.pl: replacing alò with 8
+sym2int.pl: not warning for OOVs any more times
+** Replaced 334 instances of OOVs with 8
+LOG (compile-train-graphs[5.5.891~1-37628]:main():compile-train-graphs.cc:147) compile-train-graphs: succeeded for 1502 graphs, failed for 0
+# Accounting: time=3 threads=1
+# Ended (code 0) at Fri Mar 12 13:00:31 CET 2021, elapsed time 3 seconds

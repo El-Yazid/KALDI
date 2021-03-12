@@ -1,0 +1,29 @@
+# compile-train-graphs --read-disambig-syms=data/lang/phones/disambig.int exp/tri2/tree exp/tri2/1.mdl data/lang/L.fst "ark:utils/sym2int.pl --map-oov 8 -f 2- data/lang/words.txt < data/train/split2/1/text |" "ark:|gzip -c >exp/tri2/fsts.1.gz" 
+# Started at Fri Mar 12 14:03:58 CET 2021
+#
+compile-train-graphs --read-disambig-syms=data/lang/phones/disambig.int exp/tri2/tree exp/tri2/1.mdl data/lang/L.fst 'ark:utils/sym2int.pl --map-oov 8 -f 2- data/lang/words.txt < data/train/split2/1/text |' 'ark:|gzip -c >exp/tri2/fsts.1.gz' 
+sym2int.pl: replacing sòti with 8
+sym2int.pl: replacing 18 with 8
+sym2int.pl: replacing sòti with 8
+sym2int.pl: replacing 18 with 8
+sym2int.pl: replacing 18h with 8
+sym2int.pl: replacing 18h with 8
+sym2int.pl: replacing 18h45 with 8
+sym2int.pl: replacing 18h45 with 8
+sym2int.pl: replacing fò with 8
+sym2int.pl: replacing fò with 8
+sym2int.pl: replacing dòt with 8
+sym2int.pl: replacing dòt with 8
+sym2int.pl: replacing nòmalman with 8
+sym2int.pl: replacing alò with 8
+sym2int.pl: replacing nòmalman with 8
+sym2int.pl: replacing alò with 8
+sym2int.pl: replacing 8 with 8
+sym2int.pl: replacing 8 with 8
+sym2int.pl: replacing paris8 with 8
+sym2int.pl: replacing paris8 with 8
+sym2int.pl: not warning for OOVs any more times
+** Replaced 412 instances of OOVs with 8
+LOG (compile-train-graphs[5.5.891~1-37628]:main():compile-train-graphs.cc:147) compile-train-graphs: succeeded for 1144 graphs, failed for 0
+# Accounting: time=4 threads=1
+# Ended (code 0) at Fri Mar 12 14:04:02 CET 2021, elapsed time 4 seconds

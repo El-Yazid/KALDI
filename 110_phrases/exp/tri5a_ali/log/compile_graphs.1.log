@@ -1,0 +1,29 @@
+# compile-train-graphs --read-disambig-syms=data/lang/phones/disambig.int exp/tri5a_ali/tree exp/tri5a_ali/final.mdl data/lang/L.fst "ark:utils/sym2int.pl --map-oov 1 -f 2- data/lang/words.txt data/train/split1/1/text|" "ark:|gzip -c >exp/tri5a_ali/fsts.1.gz" 
+# Started at Fri Mar 12 16:44:33 CET 2021
+#
+compile-train-graphs --read-disambig-syms=data/lang/phones/disambig.int exp/tri5a_ali/tree exp/tri5a_ali/final.mdl data/lang/L.fst 'ark:utils/sym2int.pl --map-oov 1 -f 2- data/lang/words.txt data/train/split1/1/text|' 'ark:|gzip -c >exp/tri5a_ali/fsts.1.gz' 
+sym2int.pl: replacing épis with 1
+sym2int.pl: replacing é with 1
+sym2int.pl: replacing é with 1
+sym2int.pl: replacing é with 1
+sym2int.pl: replacing é with 1
+sym2int.pl: replacing é with 1
+sym2int.pl: replacing é with 1
+sym2int.pl: replacing kominotar with 1
+sym2int.pl: replacing é with 1
+sym2int.pl: replacing é with 1
+sym2int.pl: replacing é with 1
+sym2int.pl: replacing é with 1
+sym2int.pl: replacing é with 1
+sym2int.pl: replacing é with 1
+sym2int.pl: replacing é with 1
+sym2int.pl: replacing é with 1
+sym2int.pl: replacing é with 1
+sym2int.pl: replacing élvé with 1
+sym2int.pl: replacing élvé with 1
+sym2int.pl: replacing élvé with 1
+sym2int.pl: not warning for OOVs any more times
+** Replaced 32 instances of OOVs with 1
+LOG (compile-train-graphs[5.5.891~1-37628]:main():compile-train-graphs.cc:147) compile-train-graphs: succeeded for 99 graphs, failed for 0
+# Accounting: time=0 threads=1
+# Ended (code 0) at Fri Mar 12 16:44:33 CET 2021, elapsed time 0 seconds

@@ -1,0 +1,26 @@
+# gmm-rescore-lattice exp/tri5a/final.mdl "ark:gunzip -c exp/tri5a/decode/lat.tmp.1.gz|" "ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split1/1/utt2spk scp:data/test/split1/1/cmvn.scp scp:data/test/split1/1/feats.scp ark:- | splice-feats  ark:- ark:- | transform-feats exp/tri5a/final.mat ark:- ark:- | transform-feats --utt2spk=ark:data/test/split1/1/utt2spk ark:exp/tri5a/decode/trans.1 ark:- ark:- |" ark:- | lattice-determinize-pruned --acoustic-scale=0.083333 --beam=6.0 ark:- "ark:|gzip -c > exp/tri5a/decode/lat.1.gz" && rm exp/tri5a/decode/lat.tmp.1.gz 
+# Started at Fri Mar 12 16:44:14 CET 2021
+#
+gmm-rescore-lattice exp/tri5a/final.mdl 'ark:gunzip -c exp/tri5a/decode/lat.tmp.1.gz|' 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split1/1/utt2spk scp:data/test/split1/1/cmvn.scp scp:data/test/split1/1/feats.scp ark:- | splice-feats  ark:- ark:- | transform-feats exp/tri5a/final.mat ark:- ark:- | transform-feats --utt2spk=ark:data/test/split1/1/utt2spk ark:exp/tri5a/decode/trans.1 ark:- ark:- |' ark:- 
+lattice-determinize-pruned --acoustic-scale=0.083333 --beam=6.0 ark:- 'ark:|gzip -c > exp/tri5a/decode/lat.1.gz' 
+transform-feats exp/tri5a/final.mat ark:- ark:- 
+splice-feats ark:- ark:- 
+transform-feats --utt2spk=ark:data/test/split1/1/utt2spk ark:exp/tri5a/decode/trans.1 ark:- ark:- 
+apply-cmvn --utt2spk=ark:data/test/split1/1/utt2spk scp:data/test/split1/1/cmvn.scp scp:data/test/split1/1/feats.scp ark:- 
+LOG (apply-cmvn[5.5.891~1-37628]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 10 utterances, errors on 0
+LOG (lattice-determinize-pruned[5.5.891~1-37628]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (lattice-determinize-pruned[5.5.891~1-37628]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (lattice-determinize-pruned[5.5.891~1-37628]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+WARNING (lattice-determinize-pruned[5.5.891~1-37628]:CheckMemoryUsage():determinize-lattice-pruned.cc:320) Did not reach requested beam in determinize-lattice: size exceeds maximum 50000000 bytes; (repo,arcs,elems) = (36593344,56064,13960488), after rebuilding, repo size was 26057952, effective beam was 5.05597 vs. requested beam 6
+WARNING (lattice-determinize-pruned[5.5.891~1-37628]:main():lattice-determinize-pruned.cc:119) For key 1041_56, determinization did not succeed(partial output will be pruned tighter than the specified beam.)
+LOG (transform-feats[5.5.891~1-37628]:main():transform-feats.cc:158) Overall average [pseudo-]logdet is -69.1217 over 2682 frames.
+LOG (transform-feats[5.5.891~1-37628]:main():transform-feats.cc:161) Applied transform to 10 utterances; 0 had errors.
+LOG (transform-feats[5.5.891~1-37628]:main():transform-feats.cc:158) Overall average logdet is 1.73172 over 2682 frames.
+LOG (transform-feats[5.5.891~1-37628]:main():transform-feats.cc:161) Applied transform to 10 utterances; 0 had errors.
+LOG (lattice-determinize-pruned[5.5.891~1-37628]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (lattice-determinize-pruned[5.5.891~1-37628]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-rescore-lattice[5.5.891~1-37628]:main():gmm-rescore-lattice.cc:103) Done 10 lattices with errors on 0, #frames is 2682
+LOG (lattice-determinize-pruned[5.5.891~1-37628]:main():lattice-determinize-pruned.cc:159) Average input-lattice depth (measured at at state level) is 121.843, output depth is 201.155, over 2682 frames  (average num-frames = 268.2).
+LOG (lattice-determinize-pruned[5.5.891~1-37628]:main():lattice-determinize-pruned.cc:164) Done 10 lattices, determinization finished earlier than specified by the beam (or output was empty) on 1 of these.
+# Accounting: time=18 threads=1
+# Ended (code 0) at Fri Mar 12 16:44:32 CET 2021, elapsed time 18 seconds
